@@ -1,0 +1,1798 @@
+amazon-ebs output will be in this color.
+
+==> amazon-ebs: Prevalidating AMI Name...
+    amazon-ebs: Found Image ID: ami-9887c6e7
+==> amazon-ebs: Creating temporary keypair: packer_5d09a956-9e0b-9a4f-b986-6278a9b4ca17
+==> amazon-ebs: Creating temporary security group for this instance: packer_5d09a964-21f2-fec4-4f18-23c34628059f
+==> amazon-ebs: Authorizing access to port 22 on the temporary security group...
+==> amazon-ebs: Launching a source AWS instance...
+    amazon-ebs: Instance ID: i-07f718b09690a2d91
+==> amazon-ebs: Waiting for instance (i-07f718b09690a2d91) to become ready...
+==> amazon-ebs: Adding tags to source instance
+    amazon-ebs: Adding tag: "Name": "Packer Builder"
+==> amazon-ebs: Waiting for SSH to become available...
+==> amazon-ebs: Connected to SSH!
+==> amazon-ebs: Provisioning with shell script: /tmp/packer-shell809329244
+    amazon-ebs: Loaded plugins: fastestmirror
+    amazon-ebs: Determining fastest mirrors
+    amazon-ebs: * base: mirrors.advancedhosters.com
+    amazon-ebs: * extras: mirrors.advancedhosters.com
+    amazon-ebs: * updates: mirror.vcu.edu
+    amazon-ebs: Resolving Dependencies
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package GeoIP.x86_64 0:1.5.0-11.el7 will be updated
+    amazon-ebs: ---> Package GeoIP.x86_64 0:1.5.0-13.el7 will be an update
+    amazon-ebs: ---> Package audit.x86_64 0:2.8.1-3.el7 will be updated
+    amazon-ebs: ---> Package audit.x86_64 0:2.8.4-4.el7 will be an update
+    amazon-ebs: ---> Package audit-libs.x86_64 0:2.8.1-3.el7 will be updated
+    amazon-ebs: ---> Package audit-libs.x86_64 0:2.8.4-4.el7 will be an update
+    amazon-ebs: ---> Package audit-libs-python.x86_64 0:2.8.1-3.el7 will be updated
+    amazon-ebs: ---> Package audit-libs-python.x86_64 0:2.8.4-4.el7 will be an update
+    amazon-ebs: ---> Package bash.x86_64 0:4.2.46-30.el7 will be updated
+    amazon-ebs: ---> Package bash.x86_64 0:4.2.46-31.el7 will be an update
+    amazon-ebs: ---> Package bind-libs-lite.x86_64 32:9.9.4-61.el7 will be updated
+    amazon-ebs: ---> Package bind-libs-lite.x86_64 32:9.9.4-74.el7_6.1 will be an update
+    amazon-ebs: ---> Package bind-license.noarch 32:9.9.4-61.el7 will be updated
+    amazon-ebs: ---> Package bind-license.noarch 32:9.9.4-74.el7_6.1 will be an update
+    amazon-ebs: ---> Package binutils.x86_64 0:2.27-27.base.el7 will be updated
+    amazon-ebs: ---> Package binutils.x86_64 0:2.27-34.base.el7 will be an update
+    amazon-ebs: ---> Package centos-release.x86_64 0:7-5.1804.el7.centos.2 will be updated
+    amazon-ebs: ---> Package centos-release.x86_64 0:7-6.1810.2.el7.centos will be an update
+    amazon-ebs: ---> Package checkpolicy.x86_64 0:2.5-6.el7 will be updated
+    amazon-ebs: ---> Package checkpolicy.x86_64 0:2.5-8.el7 will be an update
+    amazon-ebs: ---> Package cloud-init.x86_64 0:0.7.9-24.el7.centos will be updated
+    amazon-ebs: ---> Package cloud-init.x86_64 0:18.2-1.el7.centos.2 will be an update
+    amazon-ebs: ---> Package coreutils.x86_64 0:8.22-21.el7 will be updated
+    amazon-ebs: ---> Package coreutils.x86_64 0:8.22-23.el7 will be an update
+    amazon-ebs: ---> Package cronie.x86_64 0:1.4.11-19.el7 will be updated
+    amazon-ebs: ---> Package cronie.x86_64 0:1.4.11-20.el7_6 will be an update
+    amazon-ebs: ---> Package cronie-anacron.x86_64 0:1.4.11-19.el7 will be updated
+    amazon-ebs: ---> Package cronie-anacron.x86_64 0:1.4.11-20.el7_6 will be an update
+    amazon-ebs: ---> Package cryptsetup-libs.x86_64 0:1.7.4-4.el7 will be updated
+    amazon-ebs: ---> Package cryptsetup-libs.x86_64 0:2.0.3-3.el7 will be an update
+    amazon-ebs: --> Processing Dependency: libjson-c.so.2()(64bit) for package: cryptsetup-libs-2.0.3-3.el7.x86_64
+    amazon-ebs: ---> Package curl.x86_64 0:7.29.0-46.el7 will be updated
+    amazon-ebs: ---> Package curl.x86_64 0:7.29.0-51.el7 will be an update
+    amazon-ebs: ---> Package dbus.x86_64 1:1.10.24-7.el7 will be updated
+    amazon-ebs: ---> Package dbus.x86_64 1:1.10.24-13.el7_6 will be an update
+    amazon-ebs: ---> Package dbus-libs.x86_64 1:1.10.24-7.el7 will be updated
+    amazon-ebs: ---> Package dbus-libs.x86_64 1:1.10.24-13.el7_6 will be an update
+    amazon-ebs: ---> Package device-mapper.x86_64 7:1.02.146-4.el7 will be updated
+    amazon-ebs: ---> Package device-mapper.x86_64 7:1.02.149-10.el7_6.7 will be an update
+    amazon-ebs: ---> Package device-mapper-libs.x86_64 7:1.02.146-4.el7 will be updated
+    amazon-ebs: ---> Package device-mapper-libs.x86_64 7:1.02.149-10.el7_6.7 will be an update
+    amazon-ebs: ---> Package dmidecode.x86_64 1:3.0-5.el7 will be updated
+    amazon-ebs: ---> Package dmidecode.x86_64 1:3.1-2.el7 will be an update
+    amazon-ebs: ---> Package dracut.x86_64 0:033-535.el7 will be updated
+    amazon-ebs: ---> Package dracut.x86_64 0:033-554.el7 will be an update
+    amazon-ebs: ---> Package dracut-config-generic.x86_64 0:033-535.el7 will be updated
+    amazon-ebs: ---> Package dracut-config-generic.x86_64 0:033-554.el7 will be an update
+    amazon-ebs: ---> Package dracut-config-rescue.x86_64 0:033-535.el7 will be updated
+    amazon-ebs: ---> Package dracut-config-rescue.x86_64 0:033-554.el7 will be an update
+    amazon-ebs: ---> Package dracut-network.x86_64 0:033-535.el7 will be updated
+    amazon-ebs: ---> Package dracut-network.x86_64 0:033-554.el7 will be an update
+    amazon-ebs: ---> Package e2fsprogs.x86_64 0:1.42.9-12.el7_5 will be updated
+    amazon-ebs: ---> Package e2fsprogs.x86_64 0:1.42.9-13.el7 will be an update
+    amazon-ebs: ---> Package e2fsprogs-libs.x86_64 0:1.42.9-12.el7_5 will be updated
+    amazon-ebs: ---> Package e2fsprogs-libs.x86_64 0:1.42.9-13.el7 will be an update
+    amazon-ebs: ---> Package elfutils-default-yama-scope.noarch 0:0.170-4.el7 will be updated
+    amazon-ebs: ---> Package elfutils-default-yama-scope.noarch 0:0.172-2.el7 will be an update
+    amazon-ebs: ---> Package elfutils-libelf.x86_64 0:0.170-4.el7 will be updated
+    amazon-ebs: ---> Package elfutils-libelf.x86_64 0:0.172-2.el7 will be an update
+    amazon-ebs: ---> Package elfutils-libs.x86_64 0:0.170-4.el7 will be updated
+    amazon-ebs: ---> Package elfutils-libs.x86_64 0:0.172-2.el7 will be an update
+    amazon-ebs: ---> Package ethtool.x86_64 2:4.8-7.el7 will be updated
+    amazon-ebs: ---> Package ethtool.x86_64 2:4.8-9.el7 will be an update
+    amazon-ebs: ---> Package file.x86_64 0:5.11-33.el7 will be updated
+    amazon-ebs: ---> Package file.x86_64 0:5.11-35.el7 will be an update
+    amazon-ebs: ---> Package file-libs.x86_64 0:5.11-33.el7 will be updated
+    amazon-ebs: ---> Package file-libs.x86_64 0:5.11-35.el7 will be an update
+    amazon-ebs: ---> Package findutils.x86_64 1:4.5.11-5.el7 will be updated
+    amazon-ebs: ---> Package findutils.x86_64 1:4.5.11-6.el7 will be an update
+    amazon-ebs: ---> Package freetype.x86_64 0:2.4.11-15.el7 will be updated
+    amazon-ebs: ---> Package freetype.x86_64 0:2.8-12.el7_6.1 will be an update
+    amazon-ebs: --> Processing Dependency: libpng15.so.15(PNG15_0)(64bit) for package: freetype-2.8-12.el7_6.1.x86_64
+    amazon-ebs: --> Processing Dependency: libpng15.so.15()(64bit) for package: freetype-2.8-12.el7_6.1.x86_64
+    amazon-ebs: ---> Package glib2.x86_64 0:2.54.2-2.el7 will be updated
+    amazon-ebs: ---> Package glib2.x86_64 0:2.56.1-4.el7_6 will be an update
+    amazon-ebs: ---> Package glibc.x86_64 0:2.17-222.el7 will be updated
+    amazon-ebs: ---> Package glibc.x86_64 0:2.17-260.el7_6.5 will be an update
+    amazon-ebs: ---> Package glibc-common.x86_64 0:2.17-222.el7 will be updated
+    amazon-ebs: ---> Package glibc-common.x86_64 0:2.17-260.el7_6.5 will be an update
+    amazon-ebs: ---> Package gnupg2.x86_64 0:2.0.22-4.el7 will be updated
+    amazon-ebs: ---> Package gnupg2.x86_64 0:2.0.22-5.el7_5 will be an update
+    amazon-ebs: ---> Package gobject-introspection.x86_64 0:1.50.0-1.el7 will be updated
+    amazon-ebs: ---> Package gobject-introspection.x86_64 0:1.56.1-1.el7 will be an update
+    amazon-ebs: ---> Package grub2.x86_64 1:2.02-0.65.el7.centos.2 will be obsoleted
+    amazon-ebs: ---> Package grub2.x86_64 1:2.02-0.76.el7.centos.1 will be obsoleting
+    amazon-ebs: ---> Package grub2-common.noarch 1:2.02-0.65.el7.centos.2 will be updated
+    amazon-ebs: ---> Package grub2-common.noarch 1:2.02-0.76.el7.centos.1 will be an update
+    amazon-ebs: ---> Package grub2-pc.x86_64 1:2.02-0.65.el7.centos.2 will be updated
+    amazon-ebs: ---> Package grub2-pc.x86_64 1:2.02-0.76.el7.centos.1 will be an update
+    amazon-ebs: ---> Package grub2-pc-modules.noarch 1:2.02-0.65.el7.centos.2 will be updated
+    amazon-ebs: ---> Package grub2-pc-modules.noarch 1:2.02-0.76.el7.centos.1 will be an update
+    amazon-ebs: ---> Package grub2-tools.x86_64 1:2.02-0.65.el7.centos.2 will be obsoleted
+    amazon-ebs: ---> Package grub2-tools.x86_64 1:2.02-0.76.el7.centos.1 will be obsoleting
+    amazon-ebs: ---> Package grub2-tools-extra.x86_64 1:2.02-0.65.el7.centos.2 will be updated
+    amazon-ebs: ---> Package grub2-tools-extra.x86_64 1:2.02-0.76.el7.centos.1 will be obsoleting
+    amazon-ebs: ---> Package grub2-tools-minimal.x86_64 1:2.02-0.65.el7.centos.2 will be updated
+    amazon-ebs: ---> Package grub2-tools-minimal.x86_64 1:2.02-0.76.el7.centos.1 will be obsoleting
+    amazon-ebs: ---> Package grubby.x86_64 0:8.28-23.el7 will be updated
+    amazon-ebs: ---> Package grubby.x86_64 0:8.28-25.el7 will be an update
+    amazon-ebs: ---> Package gssproxy.x86_64 0:0.7.0-17.el7 will be updated
+    amazon-ebs: ---> Package gssproxy.x86_64 0:0.7.0-21.el7 will be an update
+    amazon-ebs: ---> Package hwdata.x86_64 0:0.252-8.8.el7 will be updated
+    amazon-ebs: ---> Package hwdata.x86_64 0:0.252-9.1.el7 will be an update
+    amazon-ebs: ---> Package initscripts.x86_64 0:9.49.41-1.el7 will be updated
+    amazon-ebs: ---> Package initscripts.x86_64 0:9.49.46-1.el7 will be an update
+    amazon-ebs: ---> Package iproute.x86_64 0:4.11.0-14.el7 will be updated
+    amazon-ebs: ---> Package iproute.x86_64 0:4.11.0-14.el7_6.2 will be an update
+    amazon-ebs: ---> Package iptables.x86_64 0:1.4.21-24.1.el7_5 will be updated
+    amazon-ebs: ---> Package iptables.x86_64 0:1.4.21-28.el7 will be an update
+    amazon-ebs: ---> Package iwl7265-firmware.noarch 0:22.0.7.0-62.1.el7_5 will be updated
+    amazon-ebs: ---> Package iwl7265-firmware.noarch 0:22.0.7.0-69.el7 will be an update
+    amazon-ebs: ---> Package kbd.x86_64 0:1.15.5-13.el7 will be updated
+    amazon-ebs: ---> Package kbd.x86_64 0:1.15.5-15.el7 will be an update
+    amazon-ebs: ---> Package kbd-legacy.noarch 0:1.15.5-13.el7 will be updated
+    amazon-ebs: ---> Package kbd-legacy.noarch 0:1.15.5-15.el7 will be an update
+    amazon-ebs: ---> Package kbd-misc.noarch 0:1.15.5-13.el7 will be updated
+    amazon-ebs: ---> Package kbd-misc.noarch 0:1.15.5-15.el7 will be an update
+    amazon-ebs: ---> Package kernel.x86_64 0:3.10.0-957.21.3.el7 will be installed
+    amazon-ebs: --> Processing Dependency: linux-firmware >= 20180911-68 for package: kernel-3.10.0-957.21.3.el7.x86_64
+    amazon-ebs: ---> Package kernel-tools.x86_64 0:3.10.0-862.3.2.el7 will be updated
+    amazon-ebs: ---> Package kernel-tools.x86_64 0:3.10.0-957.21.3.el7 will be an update
+    amazon-ebs: ---> Package kernel-tools-libs.x86_64 0:3.10.0-862.3.2.el7 will be updated
+    amazon-ebs: ---> Package kernel-tools-libs.x86_64 0:3.10.0-957.21.3.el7 will be an update
+    amazon-ebs: ---> Package kexec-tools.x86_64 0:2.0.15-13.el7 will be updated
+    amazon-ebs: ---> Package kexec-tools.x86_64 0:2.0.15-21.el7_6.3 will be an update
+    amazon-ebs: ---> Package kmod.x86_64 0:20-21.el7 will be updated
+    amazon-ebs: ---> Package kmod.x86_64 0:20-23.el7 will be an update
+    amazon-ebs: ---> Package kmod-libs.x86_64 0:20-21.el7 will be updated
+    amazon-ebs: ---> Package kmod-libs.x86_64 0:20-23.el7 will be an update
+    amazon-ebs: ---> Package kpartx.x86_64 0:0.4.9-119.el7 will be updated
+    amazon-ebs: ---> Package kpartx.x86_64 0:0.4.9-123.el7 will be an update
+    amazon-ebs: ---> Package krb5-libs.x86_64 0:1.15.1-19.el7 will be updated
+    amazon-ebs: ---> Package krb5-libs.x86_64 0:1.15.1-37.el7_6 will be an update
+    amazon-ebs: ---> Package libbasicobjects.x86_64 0:0.1.1-29.el7 will be updated
+    amazon-ebs: ---> Package libbasicobjects.x86_64 0:0.1.1-32.el7 will be an update
+    amazon-ebs: ---> Package libblkid.x86_64 0:2.23.2-52.el7 will be updated
+    amazon-ebs: ---> Package libblkid.x86_64 0:2.23.2-59.el7_6.1 will be an update
+    amazon-ebs: ---> Package libcgroup.x86_64 0:0.41-15.el7 will be updated
+    amazon-ebs: ---> Package libcgroup.x86_64 0:0.41-20.el7 will be an update
+    amazon-ebs: ---> Package libcollection.x86_64 0:0.7.0-29.el7 will be updated
+    amazon-ebs: ---> Package libcollection.x86_64 0:0.7.0-32.el7 will be an update
+    amazon-ebs: ---> Package libcom_err.x86_64 0:1.42.9-12.el7_5 will be updated
+    amazon-ebs: ---> Package libcom_err.x86_64 0:1.42.9-13.el7 will be an update
+    amazon-ebs: ---> Package libcroco.x86_64 0:0.6.11-1.el7 will be updated
+    amazon-ebs: ---> Package libcroco.x86_64 0:0.6.12-4.el7 will be an update
+    amazon-ebs: ---> Package libcurl.x86_64 0:7.29.0-46.el7 will be updated
+    amazon-ebs: ---> Package libcurl.x86_64 0:7.29.0-51.el7 will be an update
+    amazon-ebs: ---> Package libfastjson.x86_64 0:0.99.4-2.el7 will be updated
+    amazon-ebs: ---> Package libfastjson.x86_64 0:0.99.4-3.el7 will be an update
+    amazon-ebs: ---> Package libgcc.x86_64 0:4.8.5-28.el7_5.1 will be updated
+    amazon-ebs: ---> Package libgcc.x86_64 0:4.8.5-36.el7_6.2 will be an update
+    amazon-ebs: ---> Package libgomp.x86_64 0:4.8.5-28.el7_5.1 will be updated
+    amazon-ebs: ---> Package libgomp.x86_64 0:4.8.5-36.el7_6.2 will be an update
+    amazon-ebs: ---> Package libini_config.x86_64 0:1.3.1-29.el7 will be updated
+    amazon-ebs: ---> Package libini_config.x86_64 0:1.3.1-32.el7 will be an update
+    amazon-ebs: ---> Package libmount.x86_64 0:2.23.2-52.el7 will be updated
+    amazon-ebs: ---> Package libmount.x86_64 0:2.23.2-59.el7_6.1 will be an update
+    amazon-ebs: ---> Package libpath_utils.x86_64 0:0.2.1-29.el7 will be updated
+    amazon-ebs: ---> Package libpath_utils.x86_64 0:0.2.1-32.el7 will be an update
+    amazon-ebs: ---> Package libref_array.x86_64 0:0.1.5-29.el7 will be updated
+    amazon-ebs: ---> Package libref_array.x86_64 0:0.1.5-32.el7 will be an update
+    amazon-ebs: ---> Package libselinux.x86_64 0:2.5-12.el7 will be updated
+    amazon-ebs: ---> Package libselinux.x86_64 0:2.5-14.1.el7 will be an update
+    amazon-ebs: ---> Package libselinux-python.x86_64 0:2.5-12.el7 will be updated
+    amazon-ebs: ---> Package libselinux-python.x86_64 0:2.5-14.1.el7 will be an update
+    amazon-ebs: ---> Package libselinux-utils.x86_64 0:2.5-12.el7 will be updated
+    amazon-ebs: ---> Package libselinux-utils.x86_64 0:2.5-14.1.el7 will be an update
+    amazon-ebs: ---> Package libsemanage.x86_64 0:2.5-11.el7 will be updated
+    amazon-ebs: ---> Package libsemanage.x86_64 0:2.5-14.el7 will be an update
+    amazon-ebs: ---> Package libsemanage-python.x86_64 0:2.5-11.el7 will be updated
+    amazon-ebs: ---> Package libsemanage-python.x86_64 0:2.5-14.el7 will be an update
+    amazon-ebs: ---> Package libsepol.x86_64 0:2.5-8.1.el7 will be updated
+    amazon-ebs: ---> Package libsepol.x86_64 0:2.5-10.el7 will be an update
+    amazon-ebs: ---> Package libss.x86_64 0:1.42.9-12.el7_5 will be updated
+    amazon-ebs: ---> Package libss.x86_64 0:1.42.9-13.el7 will be an update
+    amazon-ebs: ---> Package libssh2.x86_64 0:1.4.3-10.el7_2.1 will be updated
+    amazon-ebs: ---> Package libssh2.x86_64 0:1.4.3-12.el7_6.2 will be an update
+    amazon-ebs: ---> Package libstdc++.x86_64 0:4.8.5-28.el7_5.1 will be updated
+    amazon-ebs: ---> Package libstdc++.x86_64 0:4.8.5-36.el7_6.2 will be an update
+    amazon-ebs: ---> Package libteam.x86_64 0:1.27-4.el7 will be updated
+    amazon-ebs: ---> Package libteam.x86_64 0:1.27-5.el7 will be an update
+    amazon-ebs: ---> Package libtirpc.x86_64 0:0.2.4-0.10.el7 will be updated
+    amazon-ebs: ---> Package libtirpc.x86_64 0:0.2.4-0.15.el7 will be an update
+    amazon-ebs: ---> Package libuuid.x86_64 0:2.23.2-52.el7 will be updated
+    amazon-ebs: ---> Package libuuid.x86_64 0:2.23.2-59.el7_6.1 will be an update
+    amazon-ebs: ---> Package logrotate.x86_64 0:3.8.6-15.el7 will be updated
+    amazon-ebs: ---> Package logrotate.x86_64 0:3.8.6-17.el7 will be an update
+    amazon-ebs: ---> Package man-db.x86_64 0:2.6.3-9.el7 will be updated
+    amazon-ebs: ---> Package man-db.x86_64 0:2.6.3-11.el7 will be an update
+    amazon-ebs: ---> Package mariadb-libs.x86_64 1:5.5.56-2.el7 will be updated
+    amazon-ebs: ---> Package mariadb-libs.x86_64 1:5.5.60-1.el7_5 will be an update
+    amazon-ebs: ---> Package microcode_ctl.x86_64 2:2.1-29.2.el7_5 will be updated
+    amazon-ebs: ---> Package microcode_ctl.x86_64 2:2.1-47.4.el7_6 will be an update
+    amazon-ebs: ---> Package net-tools.x86_64 0:2.0-0.22.20131004git.el7 will be updated
+    amazon-ebs: ---> Package net-tools.x86_64 0:2.0-0.24.20131004git.el7 will be an update
+    amazon-ebs: ---> Package nfs-utils.x86_64 1:1.3.0-0.54.el7 will be updated
+    amazon-ebs: ---> Package nfs-utils.x86_64 1:1.3.0-0.61.el7 will be an update
+    amazon-ebs: ---> Package nss.x86_64 0:3.36.0-5.el7_5 will be updated
+    amazon-ebs: ---> Package nss.x86_64 0:3.36.0-7.1.el7_6 will be an update
+    amazon-ebs: ---> Package nss-pem.x86_64 0:1.0.3-4.el7 will be updated
+    amazon-ebs: ---> Package nss-pem.x86_64 0:1.0.3-5.el7_6.1 will be an update
+    amazon-ebs: ---> Package nss-sysinit.x86_64 0:3.36.0-5.el7_5 will be updated
+    amazon-ebs: ---> Package nss-sysinit.x86_64 0:3.36.0-7.1.el7_6 will be an update
+    amazon-ebs: ---> Package nss-tools.x86_64 0:3.36.0-5.el7_5 will be updated
+    amazon-ebs: ---> Package nss-tools.x86_64 0:3.36.0-7.1.el7_6 will be an update
+    amazon-ebs: ---> Package nss-util.x86_64 0:3.36.0-1.el7_5 will be updated
+    amazon-ebs: ---> Package nss-util.x86_64 0:3.36.0-1.1.el7_6 will be an update
+    amazon-ebs: ---> Package openldap.x86_64 0:2.4.44-15.el7_5 will be updated
+    amazon-ebs: ---> Package openldap.x86_64 0:2.4.44-21.el7_6 will be an update
+    amazon-ebs: ---> Package openssl.x86_64 1:1.0.2k-12.el7 will be updated
+    amazon-ebs: ---> Package openssl.x86_64 1:1.0.2k-16.el7_6.1 will be an update
+    amazon-ebs: ---> Package openssl-libs.x86_64 1:1.0.2k-12.el7 will be updated
+    amazon-ebs: ---> Package openssl-libs.x86_64 1:1.0.2k-16.el7_6.1 will be an update
+    amazon-ebs: ---> Package policycoreutils.x86_64 0:2.5-22.el7 will be updated
+    amazon-ebs: ---> Package policycoreutils.x86_64 0:2.5-29.el7_6.1 will be an update
+    amazon-ebs: ---> Package policycoreutils-python.x86_64 0:2.5-22.el7 will be updated
+    amazon-ebs: ---> Package policycoreutils-python.x86_64 0:2.5-29.el7_6.1 will be an update
+    amazon-ebs: ---> Package polkit.x86_64 0:0.112-14.el7 will be updated
+    amazon-ebs: ---> Package polkit.x86_64 0:0.112-18.el7_6.1 will be an update
+    amazon-ebs: ---> Package postfix.x86_64 2:2.10.1-6.el7 will be updated
+    amazon-ebs: ---> Package postfix.x86_64 2:2.10.1-7.el7 will be an update
+    amazon-ebs: ---> Package procps-ng.x86_64 0:3.3.10-17.el7_5.2 will be updated
+    amazon-ebs: ---> Package procps-ng.x86_64 0:3.3.10-23.el7 will be an update
+    amazon-ebs: ---> Package python.x86_64 0:2.7.5-68.el7 will be updated
+    amazon-ebs: ---> Package python.x86_64 0:2.7.5-77.el7_6 will be an update
+    amazon-ebs: ---> Package python-jinja2.noarch 0:2.7.2-2.el7 will be updated
+    amazon-ebs: ---> Package python-jinja2.noarch 0:2.7.2-3.el7_6 will be an update
+    amazon-ebs: ---> Package python-libs.x86_64 0:2.7.5-68.el7 will be updated
+    amazon-ebs: ---> Package python-libs.x86_64 0:2.7.5-77.el7_6 will be an update
+    amazon-ebs: ---> Package python-linux-procfs.noarch 0:0.4.9-3.el7 will be updated
+    amazon-ebs: ---> Package python-linux-procfs.noarch 0:0.4.9-4.el7 will be an update
+    amazon-ebs: ---> Package python-perf.x86_64 0:3.10.0-862.3.2.el7 will be updated
+    amazon-ebs: ---> Package python-perf.x86_64 0:3.10.0-957.21.3.el7 will be an update
+    amazon-ebs: ---> Package python-urlgrabber.noarch 0:3.10-8.el7 will be updated
+    amazon-ebs: ---> Package python-urlgrabber.noarch 0:3.10-9.el7 will be an update
+    amazon-ebs: ---> Package qemu-guest-agent.x86_64 10:2.8.0-2.el7 will be updated
+    amazon-ebs: ---> Package qemu-guest-agent.x86_64 10:2.12.0-2.el7 will be an update
+    amazon-ebs: ---> Package rpcbind.x86_64 0:0.2.0-44.el7 will be updated
+    amazon-ebs: ---> Package rpcbind.x86_64 0:0.2.0-47.el7 will be an update
+    amazon-ebs: ---> Package rpm.x86_64 0:4.11.3-32.el7 will be updated
+    amazon-ebs: ---> Package rpm.x86_64 0:4.11.3-35.el7 will be an update
+    amazon-ebs: ---> Package rpm-build-libs.x86_64 0:4.11.3-32.el7 will be updated
+    amazon-ebs: ---> Package rpm-build-libs.x86_64 0:4.11.3-35.el7 will be an update
+    amazon-ebs: ---> Package rpm-libs.x86_64 0:4.11.3-32.el7 will be updated
+    amazon-ebs: ---> Package rpm-libs.x86_64 0:4.11.3-35.el7 will be an update
+    amazon-ebs: ---> Package rpm-python.x86_64 0:4.11.3-32.el7 will be updated
+    amazon-ebs: ---> Package rpm-python.x86_64 0:4.11.3-35.el7 will be an update
+    amazon-ebs: ---> Package rsync.x86_64 0:3.1.2-4.el7 will be updated
+    amazon-ebs: ---> Package rsync.x86_64 0:3.1.2-6.el7_6.1 will be an update
+    amazon-ebs: ---> Package rsyslog.x86_64 0:8.24.0-16.el7_5.4 will be updated
+    amazon-ebs: ---> Package rsyslog.x86_64 0:8.24.0-34.el7 will be an update
+    amazon-ebs: ---> Package selinux-policy.noarch 0:3.13.1-192.el7_5.3 will be updated
+    amazon-ebs: ---> Package selinux-policy.noarch 0:3.13.1-229.el7_6.12 will be an update
+    amazon-ebs: ---> Package selinux-policy-targeted.noarch 0:3.13.1-192.el7_5.3 will be updated
+    amazon-ebs: ---> Package selinux-policy-targeted.noarch 0:3.13.1-229.el7_6.12 will be an update
+    amazon-ebs: ---> Package setools-libs.x86_64 0:3.3.8-2.el7 will be updated
+    amazon-ebs: ---> Package setools-libs.x86_64 0:3.3.8-4.el7 will be an update
+    amazon-ebs: ---> Package setup.noarch 0:2.8.71-9.el7 will be updated
+    amazon-ebs: ---> Package setup.noarch 0:2.8.71-10.el7 will be an update
+    amazon-ebs: ---> Package sg3_utils.x86_64 0:1.37-12.el7 will be updated
+    amazon-ebs: ---> Package sg3_utils.x86_64 0:1.37-17.el7 will be an update
+    amazon-ebs: ---> Package sg3_utils-libs.x86_64 0:1.37-12.el7 will be updated
+    amazon-ebs: ---> Package sg3_utils-libs.x86_64 0:1.37-17.el7 will be an update
+    amazon-ebs: ---> Package shadow-utils.x86_64 2:4.1.5.1-24.el7 will be updated
+    amazon-ebs: ---> Package shadow-utils.x86_64 2:4.1.5.1-25.el7_6.1 will be an update
+    amazon-ebs: ---> Package sudo.x86_64 0:1.8.19p2-13.el7 will be updated
+    amazon-ebs: ---> Package sudo.x86_64 0:1.8.23-3.el7 will be an update
+    amazon-ebs: ---> Package systemd.x86_64 0:219-57.el7 will be updated
+    amazon-ebs: ---> Package systemd.x86_64 0:219-62.el7_6.6 will be an update
+    amazon-ebs: ---> Package systemd-libs.x86_64 0:219-57.el7 will be updated
+    amazon-ebs: ---> Package systemd-libs.x86_64 0:219-62.el7_6.6 will be an update
+    amazon-ebs: ---> Package systemd-sysv.x86_64 0:219-57.el7 will be updated
+    amazon-ebs: ---> Package systemd-sysv.x86_64 0:219-62.el7_6.6 will be an update
+    amazon-ebs: ---> Package tar.x86_64 2:1.26-34.el7 will be updated
+    amazon-ebs: ---> Package tar.x86_64 2:1.26-35.el7 will be an update
+    amazon-ebs: ---> Package teamd.x86_64 0:1.27-4.el7 will be updated
+    amazon-ebs: ---> Package teamd.x86_64 0:1.27-5.el7 will be an update
+    amazon-ebs: ---> Package tuned.noarch 0:2.9.0-1.el7 will be updated
+    amazon-ebs: ---> Package tuned.noarch 0:2.10.0-6.el7_6.3 will be an update
+    amazon-ebs: ---> Package tzdata.noarch 0:2018e-3.el7 will be updated
+    amazon-ebs: ---> Package tzdata.noarch 0:2019a-1.el7 will be an update
+    amazon-ebs: ---> Package util-linux.x86_64 0:2.23.2-52.el7 will be updated
+    amazon-ebs: ---> Package util-linux.x86_64 0:2.23.2-59.el7_6.1 will be an update
+    amazon-ebs: --> Processing Dependency: libsmartcols = 2.23.2-59.el7_6.1 for package: util-linux-2.23.2-59.el7_6.1.x86_64
+    amazon-ebs: --> Processing Dependency: libsmartcols.so.1(SMARTCOLS_2.25)(64bit) for package: util-linux-2.23.2-59.el7_6.1.x86_64
+    amazon-ebs: --> Processing Dependency: libsmartcols.so.1()(64bit) for package: util-linux-2.23.2-59.el7_6.1.x86_64
+    amazon-ebs: ---> Package vim-minimal.x86_64 2:7.4.160-4.el7 will be updated
+    amazon-ebs: ---> Package vim-minimal.x86_64 2:7.4.160-5.el7 will be an update
+    amazon-ebs: ---> Package wpa_supplicant.x86_64 1:2.6-9.el7 will be updated
+    amazon-ebs: ---> Package wpa_supplicant.x86_64 1:2.6-12.el7 will be an update
+    amazon-ebs: ---> Package xfsprogs.x86_64 0:4.5.0-15.el7 will be updated
+    amazon-ebs: ---> Package xfsprogs.x86_64 0:4.5.0-19.el7_6 will be an update
+    amazon-ebs: ---> Package yum.noarch 0:3.4.3-158.el7.centos will be updated
+    amazon-ebs: ---> Package yum.noarch 0:3.4.3-161.el7.centos will be an update
+    amazon-ebs: ---> Package yum-plugin-fastestmirror.noarch 0:1.1.31-45.el7 will be updated
+    amazon-ebs: ---> Package yum-plugin-fastestmirror.noarch 0:1.1.31-50.el7 will be an update
+    amazon-ebs: ---> Package yum-utils.noarch 0:1.1.31-45.el7 will be updated
+    amazon-ebs: ---> Package yum-utils.noarch 0:1.1.31-50.el7 will be an update
+    amazon-ebs: ---> Package zlib.x86_64 0:1.2.7-17.el7 will be updated
+    amazon-ebs: ---> Package zlib.x86_64 0:1.2.7-18.el7 will be an update
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package json-c.x86_64 0:0.11-4.el7_0 will be installed
+    amazon-ebs: ---> Package libpng.x86_64 2:1.5.13-7.el7_2 will be installed
+    amazon-ebs: ---> Package libsmartcols.x86_64 0:2.23.2-59.el7_6.1 will be installed
+    amazon-ebs: ---> Package linux-firmware.noarch 0:20180911-69.git85c5d90.el7 will be installed
+    amazon-ebs: --> Finished Dependency Resolution
+    amazon-ebs:
+    amazon-ebs: Dependencies Resolved
+    amazon-ebs:
+    amazon-ebs: ================================================================================
+    amazon-ebs: Package                     Arch   Version                       Repository
+    amazon-ebs: Size
+    amazon-ebs: ================================================================================
+    amazon-ebs: Installing:
+    amazon-ebs: grub2                       x86_64 1:2.02-0.76.el7.centos.1      updates  31 k
+    amazon-ebs: replacing  grub2.x86_64 1:2.02-0.65.el7.centos.2
+    amazon-ebs: grub2-tools                 x86_64 1:2.02-0.76.el7.centos.1      updates 1.8 M
+    amazon-ebs: replacing  grub2-tools.x86_64 1:2.02-0.65.el7.centos.2
+    amazon-ebs: grub2-tools-extra           x86_64 1:2.02-0.76.el7.centos.1      updates 995 k
+    amazon-ebs: replacing  grub2-tools.x86_64 1:2.02-0.65.el7.centos.2
+    amazon-ebs: grub2-tools-minimal         x86_64 1:2.02-0.76.el7.centos.1      updates 172 k
+    amazon-ebs: replacing  grub2-tools.x86_64 1:2.02-0.65.el7.centos.2
+    amazon-ebs: kernel                      x86_64 3.10.0-957.21.3.el7           updates  48 M
+    amazon-ebs: Updating:
+    amazon-ebs: GeoIP                       x86_64 1.5.0-13.el7                  base    1.5 M
+    amazon-ebs: audit                       x86_64 2.8.4-4.el7                   base    250 k
+    amazon-ebs: audit-libs                  x86_64 2.8.4-4.el7                   base    100 k
+    amazon-ebs: audit-libs-python           x86_64 2.8.4-4.el7                   base     76 k
+    amazon-ebs: bash                        x86_64 4.2.46-31.el7                 base    1.0 M
+    amazon-ebs: bind-libs-lite              x86_64 32:9.9.4-74.el7_6.1           updates 741 k
+    amazon-ebs: bind-license                noarch 32:9.9.4-74.el7_6.1           updates  87 k
+    amazon-ebs: binutils                    x86_64 2.27-34.base.el7              base    5.9 M
+    amazon-ebs: centos-release              x86_64 7-6.1810.2.el7.centos         base     26 k
+    amazon-ebs: checkpolicy                 x86_64 2.5-8.el7                     base    295 k
+    amazon-ebs: cloud-init                  x86_64 18.2-1.el7.centos.2           updates 779 k
+    amazon-ebs: coreutils                   x86_64 8.22-23.el7                   base    3.3 M
+    amazon-ebs: cronie                      x86_64 1.4.11-20.el7_6               updates  91 k
+    amazon-ebs: cronie-anacron              x86_64 1.4.11-20.el7_6               updates  36 k
+    amazon-ebs: cryptsetup-libs             x86_64 2.0.3-3.el7                   base    338 k
+    amazon-ebs: curl                        x86_64 7.29.0-51.el7                 base    269 k
+    amazon-ebs: dbus                        x86_64 1:1.10.24-13.el7_6            updates 245 k
+    amazon-ebs: dbus-libs                   x86_64 1:1.10.24-13.el7_6            updates 169 k
+    amazon-ebs: device-mapper               x86_64 7:1.02.149-10.el7_6.7         updates 293 k
+    amazon-ebs: device-mapper-libs          x86_64 7:1.02.149-10.el7_6.7         updates 320 k
+    amazon-ebs: dmidecode                   x86_64 1:3.1-2.el7                   base     78 k
+    amazon-ebs: dracut                      x86_64 033-554.el7                   base    327 k
+    amazon-ebs: dracut-config-generic       x86_64 033-554.el7                   base     58 k
+    amazon-ebs: dracut-config-rescue        x86_64 033-554.el7                   base     59 k
+    amazon-ebs: dracut-network              x86_64 033-554.el7                   base    102 k
+    amazon-ebs: e2fsprogs                   x86_64 1.42.9-13.el7                 base    699 k
+    amazon-ebs: e2fsprogs-libs              x86_64 1.42.9-13.el7                 base    167 k
+    amazon-ebs: elfutils-default-yama-scope noarch 0.172-2.el7                   base     32 k
+    amazon-ebs: elfutils-libelf             x86_64 0.172-2.el7                   base    194 k
+    amazon-ebs: elfutils-libs               x86_64 0.172-2.el7                   base    285 k
+    amazon-ebs: ethtool                     x86_64 2:4.8-9.el7                   base    127 k
+    amazon-ebs: file                        x86_64 5.11-35.el7                   base     57 k
+    amazon-ebs: file-libs                   x86_64 5.11-35.el7                   base    340 k
+    amazon-ebs: findutils                   x86_64 1:4.5.11-6.el7                base    559 k
+    amazon-ebs: freetype                    x86_64 2.8-12.el7_6.1                updates 380 k
+    amazon-ebs: glib2                       x86_64 2.56.1-4.el7_6                updates 2.5 M
+    amazon-ebs: glibc                       x86_64 2.17-260.el7_6.5              updates 3.7 M
+    amazon-ebs: glibc-common                x86_64 2.17-260.el7_6.5              updates  12 M
+    amazon-ebs: gnupg2                      x86_64 2.0.22-5.el7_5                base    1.5 M
+    amazon-ebs: gobject-introspection       x86_64 1.56.1-1.el7                  base    241 k
+    amazon-ebs: grub2-common                noarch 1:2.02-0.76.el7.centos.1      updates 728 k
+    amazon-ebs: grub2-pc                    x86_64 1:2.02-0.76.el7.centos.1      updates  31 k
+    amazon-ebs: grub2-pc-modules            noarch 1:2.02-0.76.el7.centos.1      updates 846 k
+    amazon-ebs: grubby                      x86_64 8.28-25.el7                   base     70 k
+    amazon-ebs: gssproxy                    x86_64 0.7.0-21.el7                  base    109 k
+    amazon-ebs: hwdata                      x86_64 0.252-9.1.el7                 base    2.3 M
+    amazon-ebs: initscripts                 x86_64 9.49.46-1.el7                 base    439 k
+    amazon-ebs: iproute                     x86_64 4.11.0-14.el7_6.2             updates 764 k
+    amazon-ebs: iptables                    x86_64 1.4.21-28.el7                 base    433 k
+    amazon-ebs: iwl7265-firmware            noarch 22.0.7.0-69.el7               base    6.4 M
+    amazon-ebs: kbd                         x86_64 1.15.5-15.el7                 base    348 k
+    amazon-ebs: kbd-legacy                  noarch 1.15.5-15.el7                 base    466 k
+    amazon-ebs: kbd-misc                    noarch 1.15.5-15.el7                 base    1.4 M
+    amazon-ebs: kernel-tools                x86_64 3.10.0-957.21.3.el7           updates 7.1 M
+    amazon-ebs: kernel-tools-libs           x86_64 3.10.0-957.21.3.el7           updates 7.0 M
+    amazon-ebs: kexec-tools                 x86_64 2.0.15-21.el7_6.3             updates 343 k
+    amazon-ebs: kmod                        x86_64 20-23.el7                     base    121 k
+    amazon-ebs: kmod-libs                   x86_64 20-23.el7                     base     50 k
+    amazon-ebs: kpartx                      x86_64 0.4.9-123.el7                 base     77 k
+    amazon-ebs: krb5-libs                   x86_64 1.15.1-37.el7_6               updates 803 k
+    amazon-ebs: libbasicobjects             x86_64 0.1.1-32.el7                  base     26 k
+    amazon-ebs: libblkid                    x86_64 2.23.2-59.el7_6.1             updates 181 k
+    amazon-ebs: libcgroup                   x86_64 0.41-20.el7                   base     66 k
+    amazon-ebs: libcollection               x86_64 0.7.0-32.el7                  base     42 k
+    amazon-ebs: libcom_err                  x86_64 1.42.9-13.el7                 base     41 k
+    amazon-ebs: libcroco                    x86_64 0.6.12-4.el7                  base    105 k
+    amazon-ebs: libcurl                     x86_64 7.29.0-51.el7                 base    221 k
+    amazon-ebs: libfastjson                 x86_64 0.99.4-3.el7                  base     27 k
+    amazon-ebs: libgcc                      x86_64 4.8.5-36.el7_6.2              updates 102 k
+    amazon-ebs: libgomp                     x86_64 4.8.5-36.el7_6.2              updates 158 k
+    amazon-ebs: libini_config               x86_64 1.3.1-32.el7                  base     64 k
+    amazon-ebs: libmount                    x86_64 2.23.2-59.el7_6.1             updates 182 k
+    amazon-ebs: libpath_utils               x86_64 0.2.1-32.el7                  base     28 k
+    amazon-ebs: libref_array                x86_64 0.1.5-32.el7                  base     27 k
+    amazon-ebs: libselinux                  x86_64 2.5-14.1.el7                  base    162 k
+    amazon-ebs: libselinux-python           x86_64 2.5-14.1.el7                  base    235 k
+    amazon-ebs: libselinux-utils            x86_64 2.5-14.1.el7                  base    151 k
+    amazon-ebs: libsemanage                 x86_64 2.5-14.el7                    base    151 k
+    amazon-ebs: libsemanage-python          x86_64 2.5-14.el7                    base    113 k
+    amazon-ebs: libsepol                    x86_64 2.5-10.el7                    base    297 k
+    amazon-ebs: libss                       x86_64 1.42.9-13.el7                 base     46 k
+    amazon-ebs: libssh2                     x86_64 1.4.3-12.el7_6.2              updates 135 k
+    amazon-ebs: libstdc++                   x86_64 4.8.5-36.el7_6.2              updates 305 k
+    amazon-ebs: libteam                     x86_64 1.27-5.el7                    base     48 k
+    amazon-ebs: libtirpc                    x86_64 0.2.4-0.15.el7                base     89 k
+    amazon-ebs: libuuid                     x86_64 2.23.2-59.el7_6.1             updates  82 k
+    amazon-ebs: logrotate                   x86_64 3.8.6-17.el7                  base     70 k
+    amazon-ebs: man-db                      x86_64 2.6.3-11.el7                  base    832 k
+    amazon-ebs: mariadb-libs                x86_64 1:5.5.60-1.el7_5              base    758 k
+    amazon-ebs: microcode_ctl               x86_64 2:2.1-47.4.el7_6              updates 2.0 M
+    amazon-ebs: net-tools                   x86_64 2.0-0.24.20131004git.el7      base    306 k
+    amazon-ebs: nfs-utils                   x86_64 1:1.3.0-0.61.el7              base    410 k
+    amazon-ebs: nss                         x86_64 3.36.0-7.1.el7_6              updates 835 k
+    amazon-ebs: nss-pem                     x86_64 1.0.3-5.el7_6.1               updates  74 k
+    amazon-ebs: nss-sysinit                 x86_64 3.36.0-7.1.el7_6              updates  62 k
+    amazon-ebs: nss-tools                   x86_64 3.36.0-7.1.el7_6              updates 515 k
+    amazon-ebs: nss-util                    x86_64 3.36.0-1.1.el7_6              updates  78 k
+    amazon-ebs: openldap                    x86_64 2.4.44-21.el7_6               updates 356 k
+    amazon-ebs: openssl                     x86_64 1:1.0.2k-16.el7_6.1           updates 493 k
+    amazon-ebs: openssl-libs                x86_64 1:1.0.2k-16.el7_6.1           updates 1.2 M
+    amazon-ebs: policycoreutils             x86_64 2.5-29.el7_6.1                updates 916 k
+    amazon-ebs: policycoreutils-python      x86_64 2.5-29.el7_6.1                updates 456 k
+    amazon-ebs: polkit                      x86_64 0.112-18.el7_6.1              updates 168 k
+    amazon-ebs: postfix                     x86_64 2:2.10.1-7.el7                base    2.4 M
+    amazon-ebs: procps-ng                   x86_64 3.3.10-23.el7                 base    291 k
+    amazon-ebs: python                      x86_64 2.7.5-77.el7_6                updates  94 k
+    amazon-ebs: python-jinja2               noarch 2.7.2-3.el7_6                 updates 518 k
+    amazon-ebs: python-libs                 x86_64 2.7.5-77.el7_6                updates 5.6 M
+    amazon-ebs: python-linux-procfs         noarch 0.4.9-4.el7                   base     33 k
+    amazon-ebs: python-perf                 x86_64 3.10.0-957.21.3.el7           updates 7.1 M
+    amazon-ebs: python-urlgrabber           noarch 3.10-9.el7                    base    108 k
+    amazon-ebs: qemu-guest-agent            x86_64 10:2.12.0-2.el7               base    115 k
+    amazon-ebs: rpcbind                     x86_64 0.2.0-47.el7                  base     60 k
+    amazon-ebs: rpm                         x86_64 4.11.3-35.el7                 base    1.2 M
+    amazon-ebs: rpm-build-libs              x86_64 4.11.3-35.el7                 base    106 k
+    amazon-ebs: rpm-libs                    x86_64 4.11.3-35.el7                 base    277 k
+    amazon-ebs: rpm-python                  x86_64 4.11.3-35.el7                 base     83 k
+    amazon-ebs: rsync                       x86_64 3.1.2-6.el7_6.1               updates 404 k
+    amazon-ebs: rsyslog                     x86_64 8.24.0-34.el7                 base    614 k
+    amazon-ebs: selinux-policy              noarch 3.13.1-229.el7_6.12           updates 484 k
+    amazon-ebs: selinux-policy-targeted     noarch 3.13.1-229.el7_6.12           updates 6.9 M
+    amazon-ebs: setools-libs                x86_64 3.3.8-4.el7                   base    620 k
+    amazon-ebs: setup                       noarch 2.8.71-10.el7                 base    166 k
+    amazon-ebs: sg3_utils                   x86_64 1.37-17.el7                   base    646 k
+    amazon-ebs: sg3_utils-libs              x86_64 1.37-17.el7                   base     65 k
+    amazon-ebs: shadow-utils                x86_64 2:4.1.5.1-25.el7_6.1          updates 1.1 M
+    amazon-ebs: sudo                        x86_64 1.8.23-3.el7                  base    841 k
+    amazon-ebs: systemd                     x86_64 219-62.el7_6.6                updates 5.1 M
+    amazon-ebs: systemd-libs                x86_64 219-62.el7_6.6                updates 407 k
+    amazon-ebs: systemd-sysv                x86_64 219-62.el7_6.6                updates  84 k
+    amazon-ebs: tar                         x86_64 2:1.26-35.el7                 base    846 k
+    amazon-ebs: teamd                       x86_64 1.27-5.el7                    base    112 k
+    amazon-ebs: tuned                       noarch 2.10.0-6.el7_6.3              updates 254 k
+    amazon-ebs: tzdata                      noarch 2019a-1.el7                   updates 494 k
+    amazon-ebs: util-linux                  x86_64 2.23.2-59.el7_6.1             updates 2.0 M
+    amazon-ebs: vim-minimal                 x86_64 2:7.4.160-5.el7               base    437 k
+    amazon-ebs: wpa_supplicant              x86_64 1:2.6-12.el7                  base    1.2 M
+    amazon-ebs: xfsprogs                    x86_64 4.5.0-19.el7_6                updates 897 k
+    amazon-ebs: yum                         noarch 3.4.3-161.el7.centos          base    1.2 M
+    amazon-ebs: yum-plugin-fastestmirror    noarch 1.1.31-50.el7                 base     34 k
+    amazon-ebs: yum-utils                   noarch 1.1.31-50.el7                 base    121 k
+    amazon-ebs: zlib                        x86_64 1.2.7-18.el7                  base     90 k
+    amazon-ebs: Installing for dependencies:
+    amazon-ebs: json-c                      x86_64 0.11-4.el7_0                  base     31 k
+    amazon-ebs: libpng                      x86_64 2:1.5.13-7.el7_2              base    213 k
+    amazon-ebs: libsmartcols                x86_64 2.23.2-59.el7_6.1             updates 140 k
+    amazon-ebs: linux-firmware              noarch 20180911-69.git85c5d90.el7    base     49 M
+    amazon-ebs:
+    amazon-ebs: Transaction Summary
+    amazon-ebs: ================================================================================
+    amazon-ebs: Install    5 Packages (+4 Dependent packages)
+    amazon-ebs: Upgrade  142 Packages
+    amazon-ebs:
+    amazon-ebs: Total download size: 224 M
+    amazon-ebs: Downloading packages:
+    amazon-ebs: Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+    amazon-ebs: Public key for audit-libs-python-2.8.4-4.el7.x86_64.rpm is not installed
+    amazon-ebs: warning: /var/cache/yum/x86_64/7/base/packages/audit-libs-python-2.8.4-4.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+    amazon-ebs: Public key for bind-license-9.9.4-74.el7_6.1.noarch.rpm is not installed
+    amazon-ebs: Importing GPG key 0xF4A80EB5:
+    amazon-ebs: Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
+    amazon-ebs: Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
+    amazon-ebs: --------------------------------------------------------------------------------
+    amazon-ebs: Package    : centos-release-7-5.1804.el7.centos.2.x86_64 (installed)
+    amazon-ebs: Total                                               32 MB/s | 224 MB  00:06
+    amazon-ebs: From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+    amazon-ebs: Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+    amazon-ebs: Running transaction check
+    amazon-ebs: Running transaction test
+    amazon-ebs: Transaction test succeeded
+    amazon-ebs: Running transaction
+    amazon-ebs: Updating   : libgcc-4.8.5-36.el7_6.2.x86_64                             1/297
+    amazon-ebs: Updating   : 1:grub2-common-2.02-0.76.el7.centos.1.noarch               2/297
+    amazon-ebs: Updating   : 1:grub2-pc-modules-2.02-0.76.el7.centos.1.noarch           3/297
+    amazon-ebs: Updating   : kbd-legacy-1.15.5-15.el7.noarch                            4/297
+    amazon-ebs: Updating   : tzdata-2019a-1.el7.noarch                                  5/297
+    amazon-ebs: Updating   : glibc-common-2.17-260.el7_6.5.x86_64                       6/297
+    amazon-ebs: Updating   : glibc-2.17-260.el7_6.5.x86_64                              7/297
+    amazon-ebs: Updating   : bash-4.2.46-31.el7.x86_64                                  8/297
+    amazon-ebs: Updating   : libsepol-2.5-10.el7.x86_64                                 9/297
+    amazon-ebs: Updating   : libselinux-2.5-14.1.el7.x86_64                            10/297
+    amazon-ebs: Updating   : zlib-1.2.7-18.el7.x86_64                                  11/297
+    amazon-ebs: Updating   : audit-libs-2.8.4-4.el7.x86_64                             12/297
+    amazon-ebs: Updating   : libcom_err-1.42.9-13.el7.x86_64                           13/297
+    amazon-ebs: Updating   : 1:openssl-libs-1.0.2k-16.el7_6.1.x86_64                   14/297
+    amazon-ebs: Updating   : coreutils-8.22-23.el7.x86_64                              15/297
+    amazon-ebs: Updating   : krb5-libs-1.15.1-37.el7_6.x86_64                          16/297
+    amazon-ebs: Updating   : elfutils-libelf-0.172-2.el7.x86_64                        17/297
+    amazon-ebs: Updating   : libuuid-2.23.2-59.el7_6.1.x86_64                          18/297
+    amazon-ebs: Updating   : libblkid-2.23.2-59.el7_6.1.x86_64                         19/297
+    amazon-ebs: Updating   : nss-util-3.36.0-1.1.el7_6.x86_64                          20/297
+    amazon-ebs: Updating   : centos-release-7-6.1810.2.el7.centos.x86_64               21/297
+    amazon-ebs: Updating   : libmount-2.23.2-59.el7_6.1.x86_64                         22/297
+    amazon-ebs: Updating   : glib2-2.56.1-4.el7_6.x86_64                               23/297
+    amazon-ebs: Updating   : python-libs-2.7.5-77.el7_6.x86_64                         24/297
+    amazon-ebs: Updating   : python-2.7.5-77.el7_6.x86_64                              25/297
+    amazon-ebs: Updating   : libsemanage-2.5-14.el7.x86_64                             26/297
+    amazon-ebs: Updating   : file-libs-5.11-35.el7.x86_64                              27/297
+    amazon-ebs: Updating   : file-5.11-35.el7.x86_64                                   28/297
+    amazon-ebs: Updating   : 1:findutils-4.5.11-6.el7.x86_64                           29/297
+    amazon-ebs: Updating   : libstdc++-4.8.5-36.el7_6.2.x86_64                         30/297
+    amazon-ebs: Updating   : libselinux-python-2.5-14.1.el7.x86_64                     31/297
+    amazon-ebs: Updating   : setup-2.8.71-10.el7.noarch                                32/297
+    amazon-ebs: warning: /etc/shadow created as /etc/shadow.rpmnew
+    amazon-ebs: Updating   : 2:shadow-utils-4.1.5.1-25.el7_6.1.x86_64                  33/297
+    amazon-ebs: Updating   : nss-sysinit-3.36.0-7.1.el7_6.x86_64                       34/297
+    amazon-ebs: Updating   : nss-3.36.0-7.1.el7_6.x86_64                               35/297
+    amazon-ebs: Updating   : nss-pem-1.0.3-5.el7_6.1.x86_64                            36/297
+    amazon-ebs: Updating   : libtirpc-0.2.4-0.15.el7.x86_64                            37/297
+    amazon-ebs: Updating   : libbasicobjects-0.1.1-32.el7.x86_64                       38/297
+    amazon-ebs: Updating   : libref_array-0.1.5-32.el7.x86_64                          39/297
+    amazon-ebs: Updating   : 2:ethtool-4.8-9.el7.x86_64                                40/297
+    amazon-ebs: Updating   : libcollection-0.7.0-32.el7.x86_64                         41/297
+    amazon-ebs: Updating   : nss-tools-3.36.0-7.1.el7_6.x86_64                         42/297
+    amazon-ebs: Updating   : 1:mariadb-libs-5.5.60-1.el7_5.x86_64                      43/297
+    amazon-ebs: Updating   : setools-libs-3.3.8-4.el7.x86_64                           44/297
+    amazon-ebs: Updating   : libsemanage-python-2.5-14.el7.x86_64                      45/297
+    amazon-ebs: Updating   : python-jinja2-2.7.2-3.el7_6.noarch                        46/297
+    amazon-ebs: Updating   : python-perf-3.10.0-957.21.3.el7.x86_64                    47/297
+    amazon-ebs: Updating   : python-linux-procfs-0.4.9-4.el7.noarch                    48/297
+    amazon-ebs: Updating   : audit-libs-python-2.8.4-4.el7.x86_64                      49/297
+    amazon-ebs: Updating   : python-urlgrabber-3.10-9.el7.noarch                       50/297
+    amazon-ebs: Updating   : grubby-8.28-25.el7.x86_64                                 51/297
+    amazon-ebs: Updating   : logrotate-3.8.6-17.el7.x86_64                             52/297
+    amazon-ebs: Updating   : binutils-2.27-34.base.el7.x86_64                          53/297
+    amazon-ebs: Updating   : libssh2-1.4.3-12.el7_6.2.x86_64                           54/297
+    amazon-ebs: Updating   : libcurl-7.29.0-51.el7.x86_64                              55/297
+    amazon-ebs: Updating   : curl-7.29.0-51.el7.x86_64                                 56/297
+    amazon-ebs: Updating   : rpm-libs-4.11.3-35.el7.x86_64                             57/297
+    amazon-ebs: Updating   : rpm-4.11.3-35.el7.x86_64                                  58/297
+    amazon-ebs: Updating   : openldap-2.4.44-21.el7_6.x86_64                           59/297
+    amazon-ebs: Updating   : gnupg2-2.0.22-5.el7_5.x86_64                              60/297
+    amazon-ebs: Updating   : rpm-build-libs-4.11.3-35.el7.x86_64                       61/297
+    amazon-ebs: Updating   : rpm-python-4.11.3-35.el7.x86_64                           62/297
+    amazon-ebs: Updating   : yum-plugin-fastestmirror-1.1.31-50.el7.noarch             63/297
+    amazon-ebs: Updating   : yum-3.4.3-161.el7.centos.noarch                           64/297
+    amazon-ebs: Updating   : e2fsprogs-libs-1.42.9-13.el7.x86_64                       65/297
+    amazon-ebs: Updating   : libss-1.42.9-13.el7.x86_64                                66/297
+    amazon-ebs: Updating   : e2fsprogs-1.42.9-13.el7.x86_64                            67/297
+    amazon-ebs: Installing : 2:libpng-1.5.13-7.el7_2.x86_64                            68/297
+    amazon-ebs: Updating   : freetype-2.8-12.el7_6.1.x86_64                            69/297
+    amazon-ebs: Updating   : GeoIP-1.5.0-13.el7.x86_64                                 70/297
+    amazon-ebs: Updating   : kmod-libs-20-23.el7.x86_64                                71/297
+    amazon-ebs: Updating   : libselinux-utils-2.5-14.1.el7.x86_64                      72/297
+    amazon-ebs: Updating   : 2:tar-1.26-35.el7.x86_64                                  73/297
+    amazon-ebs: Updating   : 2:vim-minimal-7.4.160-5.el7.x86_64                        74/297
+    amazon-ebs: Updating   : iptables-1.4.21-28.el7.x86_64                             75/297
+    amazon-ebs: Updating   : iproute-4.11.0-14.el7_6.2.x86_64                          76/297
+    amazon-ebs: Installing : linux-firmware-20180911-69.git85c5d90.el7.noarch          77/297
+    amazon-ebs: Updating   : kernel-tools-libs-3.10.0-957.21.3.el7.x86_64              78/297
+    amazon-ebs: Updating   : libpath_utils-0.2.1-32.el7.x86_64                         79/297
+    amazon-ebs: Updating   : libini_config-1.3.1-32.el7.x86_64                         80/297
+    amazon-ebs: Installing : libsmartcols-2.23.2-59.el7_6.1.x86_64                     81/297
+    amazon-ebs: Updating   : libfastjson-0.99.4-3.el7.x86_64                           82/297
+    amazon-ebs: Updating   : 1:dmidecode-3.1-2.el7.x86_64                              83/297
+    amazon-ebs: Updating   : sg3_utils-libs-1.37-17.el7.x86_64                         84/297
+    amazon-ebs: Updating   : libteam-1.27-5.el7.x86_64                                 85/297
+    amazon-ebs: Installing : json-c-0.11-4.el7_0.x86_64                                86/297
+    amazon-ebs: Updating   : kpartx-0.4.9-123.el7.x86_64                               87/297
+    amazon-ebs: Updating   : 7:device-mapper-1.02.149-10.el7_6.7.x86_64                88/297
+    amazon-ebs: Updating   : util-linux-2.23.2-59.el7_6.1.x86_64                       89/297
+    amazon-ebs: Updating   : procps-ng-3.3.10-23.el7.x86_64                            90/297
+    amazon-ebs: Updating   : 7:device-mapper-libs-1.02.149-10.el7_6.7.x86_64           91/297
+    amazon-ebs: Updating   : cryptsetup-libs-2.0.3-3.el7.x86_64                        92/297
+    amazon-ebs: Updating   : dracut-033-554.el7.x86_64                                 93/297
+    amazon-ebs: Updating   : kmod-20-23.el7.x86_64                                     94/297
+    amazon-ebs: Updating   : elfutils-libs-0.172-2.el7.x86_64                          95/297
+    amazon-ebs: Updating   : systemd-libs-219-62.el7_6.6.x86_64                        96/297
+    amazon-ebs: Updating   : 1:dbus-libs-1.10.24-13.el7_6.x86_64                       97/297
+    amazon-ebs: Updating   : systemd-219-62.el7_6.6.x86_64                             98/297
+    amazon-ebs: Updating   : 1:dbus-1.10.24-13.el7_6.x86_64                            99/297
+    amazon-ebs: Updating   : elfutils-default-yama-scope-0.172-2.el7.noarch           100/297
+    amazon-ebs: Updating   : systemd-sysv-219-62.el7_6.6.x86_64                       101/297
+    amazon-ebs: Installing : 1:grub2-tools-minimal-2.02-0.76.el7.centos.1.x86_64      102/297
+    amazon-ebs: Updating   : policycoreutils-2.5-29.el7_6.1.x86_64                    103/297
+    amazon-ebs: Installing : 1:grub2-tools-2.02-0.76.el7.centos.1.x86_64              104/297
+    amazon-ebs: Updating   : initscripts-9.49.46-1.el7.x86_64                         105/297
+    amazon-ebs: Installing : 1:grub2-tools-extra-2.02-0.76.el7.centos.1.x86_64        106/297
+    amazon-ebs: Updating   : 1:grub2-pc-2.02-0.76.el7.centos.1.x86_64                 107/297
+    amazon-ebs: Updating   : selinux-policy-3.13.1-229.el7_6.12.noarch                108/297
+    amazon-ebs: Updating   : rpcbind-0.2.0-47.el7.x86_64                              109/297
+    amazon-ebs: Updating   : polkit-0.112-18.el7_6.1.x86_64                           110/297
+    amazon-ebs: Updating   : cronie-anacron-1.4.11-20.el7_6.x86_64                    111/297
+    amazon-ebs: Updating   : cronie-1.4.11-20.el7_6.x86_64                            112/297
+    amazon-ebs: Updating   : libcgroup-0.41-20.el7.x86_64                             113/297
+    amazon-ebs: Updating   : net-tools-2.0-0.24.20131004git.el7.x86_64                114/297
+    amazon-ebs: Updating   : gssproxy-0.7.0-21.el7.x86_64                             115/297
+    amazon-ebs: Updating   : dracut-network-033-554.el7.x86_64                        116/297
+    amazon-ebs: Updating   : checkpolicy-2.5-8.el7.x86_64                             117/297
+    amazon-ebs: Updating   : policycoreutils-python-2.5-29.el7_6.1.x86_64             118/297
+    amazon-ebs: Updating   : kbd-misc-1.15.5-15.el7.noarch                            119/297
+    amazon-ebs: Updating   : 32:bind-license-9.9.4-74.el7_6.1.noarch                  120/297
+    amazon-ebs: Updating   : 32:bind-libs-lite-9.9.4-74.el7_6.1.x86_64                121/297
+    amazon-ebs: Updating   : kbd-1.15.5-15.el7.x86_64                                 122/297
+    amazon-ebs: Updating   : cloud-init-18.2-1.el7.centos.2.x86_64                    123/297
+    amazon-ebs: Updating   : kexec-tools-2.0.15-21.el7_6.3.x86_64                     124/297
+    amazon-ebs: Updating   : 1:nfs-utils-1.3.0-0.61.el7.x86_64                        125/297
+    amazon-ebs: Updating   : tuned-2.10.0-6.el7_6.3.noarch                            126/297
+    amazon-ebs: Updating   : selinux-policy-targeted-3.13.1-229.el7_6.12.noarch       127/297
+    amazon-ebs: Installing : 1:grub2-2.02-0.76.el7.centos.1.x86_64                    128/297
+    amazon-ebs: Installing : kernel-3.10.0-957.21.3.el7.x86_64                        129/297
+    amazon-ebs: Updating   : 2:postfix-2.10.1-7.el7.x86_64                            130/297
+    amazon-ebs: Updating   : 1:wpa_supplicant-2.6-12.el7.x86_64                       131/297
+    amazon-ebs: Updating   : audit-2.8.4-4.el7.x86_64                                 132/297
+    amazon-ebs: Updating   : rsyslog-8.24.0-34.el7.x86_64                             133/297
+    amazon-ebs: Updating   : hwdata-0.252-9.1.el7.x86_64                              134/297
+    amazon-ebs: Updating   : 2:microcode_ctl-2.1-47.4.el7_6.x86_64                    135/297
+    amazon-ebs: Updating   : rsync-3.1.2-6.el7_6.1.x86_64                             136/297
+    amazon-ebs: Updating   : 10:qemu-guest-agent-2.12.0-2.el7.x86_64                  137/297
+    amazon-ebs: Updating   : teamd-1.27-5.el7.x86_64                                  138/297
+    amazon-ebs: Updating   : dracut-config-generic-033-554.el7.x86_64                 139/297
+    amazon-ebs: Updating   : dracut-config-rescue-033-554.el7.x86_64                  140/297
+    amazon-ebs: Updating   : sg3_utils-1.37-17.el7.x86_64                             141/297
+    amazon-ebs: Updating   : kernel-tools-3.10.0-957.21.3.el7.x86_64                  142/297
+    amazon-ebs: Updating   : sudo-1.8.23-3.el7.x86_64                                 143/297
+    amazon-ebs: Updating   : yum-utils-1.1.31-50.el7.noarch                           144/297
+    amazon-ebs: Updating   : libcroco-0.6.12-4.el7.x86_64                             145/297
+    amazon-ebs: Updating   : gobject-introspection-1.56.1-1.el7.x86_64                146/297
+    amazon-ebs: Updating   : xfsprogs-4.5.0-19.el7_6.x86_64                           147/297
+    amazon-ebs: Updating   : 1:openssl-1.0.2k-16.el7_6.1.x86_64                       148/297
+    amazon-ebs: Updating   : man-db-2.6.3-11.el7.x86_64                               149/297
+    amazon-ebs: Updating   : libgomp-4.8.5-36.el7_6.2.x86_64                          150/297
+    amazon-ebs: Updating   : iwl7265-firmware-22.0.7.0-69.el7.noarch                  151/297
+    amazon-ebs: Cleanup    : cloud-init-0.7.9-24.el7.centos.x86_64                    152/297
+    amazon-ebs: Cleanup    : 1:nfs-utils-1.3.0-0.54.el7.x86_64                        153/297
+    amazon-ebs: Cleanup    : policycoreutils-python-2.5-22.el7.x86_64                 154/297
+    amazon-ebs: Cleanup    : gssproxy-0.7.0-17.el7.x86_64                             155/297
+    amazon-ebs: Cleanup    : kexec-tools-2.0.15-13.el7.x86_64                         156/297
+    amazon-ebs: Cleanup    : 2:postfix-2.10.1-6.el7.x86_64                            157/297
+    amazon-ebs: Cleanup    : tuned-2.9.0-1.el7.noarch                                 158/297
+    amazon-ebs: Cleanup    : rpcbind-0.2.0-44.el7.x86_64                              159/297
+    amazon-ebs: Cleanup    : 32:bind-libs-lite-9.9.4-61.el7.x86_64                    160/297
+    amazon-ebs: Cleanup    : 1:openssl-1.0.2k-12.el7.x86_64                           161/297
+    amazon-ebs: Cleanup    : rsyslog-8.24.0-16.el7_5.4.x86_64                         162/297
+    amazon-ebs: Cleanup    : polkit-0.112-14.el7.x86_64                               163/297
+    amazon-ebs: Cleanup    : audit-2.8.1-3.el7.x86_64                                 164/297
+    amazon-ebs: Cleanup    : sudo-1.8.19p2-13.el7.x86_64                              165/297
+    amazon-ebs: Cleanup    : 1:wpa_supplicant-2.6-9.el7.x86_64                        166/297
+    amazon-ebs: Cleanup    : e2fsprogs-1.42.9-12.el7_5.x86_64                         167/297
+    amazon-ebs: Cleanup    : cronie-anacron-1.4.11-19.el7.x86_64                      168/297
+    amazon-ebs: Cleanup    : cronie-1.4.11-19.el7.x86_64                              169/297
+    amazon-ebs: Cleanup    : 10:qemu-guest-agent-2.8.0-2.el7.x86_64                   170/297
+    amazon-ebs: Cleanup    : 1:mariadb-libs-5.5.56-2.el7.x86_64                       171/297
+    amazon-ebs: Cleanup    : libini_config-1.3.1-29.el7.x86_64                        172/297
+    amazon-ebs: Cleanup    : setools-libs-3.3.8-2.el7.x86_64                          173/297
+    amazon-ebs: Cleanup    : sg3_utils-1.37-12.el7.x86_64                             174/297
+    amazon-ebs: Cleanup    : xfsprogs-4.5.0-15.el7.x86_64                             175/297
+    amazon-ebs: Cleanup    : logrotate-3.8.6-15.el7.x86_64                            176/297
+    amazon-ebs: Cleanup    : libsemanage-python-2.5-11.el7.x86_64                     177/297
+    amazon-ebs: Cleanup    : net-tools-2.0-0.22.20131004git.el7.x86_64                178/297
+    amazon-ebs: Cleanup    : kernel-tools-3.10.0-862.3.2.el7.x86_64                   179/297
+    amazon-ebs: Cleanup    : man-db-2.6.3-9.el7.x86_64                                180/297
+    amazon-ebs: Cleanup    : kbd-1.15.5-13.el7.x86_64                                 181/297
+    amazon-ebs: Cleanup    : initscripts-9.49.41-1.el7.x86_64                         182/297
+    amazon-ebs: Cleanup    : gobject-introspection-1.50.0-1.el7.x86_64                183/297
+    amazon-ebs: Cleanup    : teamd-1.27-4.el7.x86_64                                  184/297
+    amazon-ebs: Cleanup    : selinux-policy-targeted-3.13.1-192.el7_5.3.noarch        185/297
+    amazon-ebs: Cleanup    : selinux-policy-3.13.1-192.el7_5.3.noarch                 186/297
+    amazon-ebs: Cleanup    : dracut-network-033-535.el7.x86_64                        187/297
+    amazon-ebs: Cleanup    : systemd-sysv-219-57.el7.x86_64                           188/297
+    amazon-ebs: Cleanup    : dracut-config-rescue-033-535.el7.x86_64                  189/297
+    amazon-ebs: Cleanup    : 1:grub2-2.02-0.65.el7.centos.2.x86_64                    190/297
+    amazon-ebs: Cleanup    : 1:grub2-pc-2.02-0.65.el7.centos.2.x86_64                 191/297
+    amazon-ebs: Cleanup    : yum-utils-1.1.31-45.el7.noarch                           192/297
+    amazon-ebs: Cleanup    : yum-plugin-fastestmirror-1.1.31-45.el7.noarch            193/297
+    amazon-ebs: Cleanup    : yum-3.4.3-158.el7.centos.noarch                          194/297
+    amazon-ebs: Cleanup    : hwdata-0.252-8.8.el7.x86_64                              195/297
+    amazon-ebs: Cleanup    : rpm-python-4.11.3-32.el7.x86_64                          196/297
+    amazon-ebs: Cleanup    : rpm-build-libs-4.11.3-32.el7.x86_64                      197/297
+    amazon-ebs: Cleanup    : policycoreutils-2.5-22.el7.x86_64                        198/297
+    amazon-ebs: Cleanup    : 1:grub2-tools-extra-2.02-0.65.el7.centos.2.x86_64        199/297
+    amazon-ebs: Cleanup    : 1:grub2-tools-2.02-0.65.el7.centos.2.x86_64              200/297
+    amazon-ebs: Cleanup    : gnupg2-2.0.22-4.el7.x86_64                               201/297
+    amazon-ebs: Cleanup    : file-5.11-33.el7.x86_64                                  202/297
+    amazon-ebs: Cleanup    : 1:grub2-tools-minimal-2.02-0.65.el7.centos.2.x86_64      203/297
+    amazon-ebs: Cleanup    : iproute-4.11.0-14.el7.x86_64                             204/297
+    amazon-ebs: Cleanup    : libselinux-utils-2.5-12.el7.x86_64                       205/297
+    amazon-ebs: Cleanup    : libtirpc-0.2.4-0.10.el7.x86_64                           206/297
+    amazon-ebs: Cleanup    : python-perf-3.10.0-862.3.2.el7.x86_64                    207/297
+    amazon-ebs: Cleanup    : audit-libs-python-2.8.1-3.el7.x86_64                     208/297
+    amazon-ebs: Cleanup    : libcgroup-0.41-15.el7.x86_64                             209/297
+    amazon-ebs: Cleanup    : libselinux-python-2.5-12.el7.x86_64                      210/297
+    amazon-ebs: Cleanup    : rsync-3.1.2-4.el7.x86_64                                 211/297
+    amazon-ebs: Cleanup    : grubby-8.28-23.el7.x86_64                                212/297
+    amazon-ebs: Cleanup    : file-libs-5.11-33.el7.x86_64                             213/297
+    amazon-ebs: Cleanup    : libstdc++-4.8.5-28.el7_5.1.x86_64                        214/297
+    amazon-ebs: Cleanup    : e2fsprogs-libs-1.42.9-12.el7_5.x86_64                    215/297
+    amazon-ebs: Cleanup    : libss-1.42.9-12.el7_5.x86_64                             216/297
+    amazon-ebs: Cleanup    : 2:vim-minimal-7.4.160-4.el7.x86_64                       217/297
+    amazon-ebs: Cleanup    : GeoIP-1.5.0-11.el7.x86_64                                218/297
+    amazon-ebs: Cleanup    : libcroco-0.6.11-1.el7.x86_64                             219/297
+    amazon-ebs: Cleanup    : glib2-2.54.2-2.el7.x86_64                                220/297
+    amazon-ebs: Cleanup    : 2:microcode_ctl-2.1-29.2.el7_5.x86_64                    221/297
+    amazon-ebs: Cleanup    : iptables-1.4.21-24.1.el7_5.x86_64                        222/297
+    amazon-ebs: Cleanup    : freetype-2.4.11-15.el7.x86_64                            223/297
+    amazon-ebs: Cleanup    : libgomp-4.8.5-28.el7_5.1.x86_64                          224/297
+    amazon-ebs: Cleanup    : python-urlgrabber-3.10-8.el7.noarch                      225/297
+    amazon-ebs: Cleanup    : 1:grub2-pc-modules-2.02-0.65.el7.centos.2.noarch         226/297
+    amazon-ebs: Cleanup    : python-linux-procfs-0.4.9-3.el7.noarch                   227/297
+    amazon-ebs: Cleanup    : python-jinja2-2.7.2-2.el7.noarch                         228/297
+    amazon-ebs: Cleanup    : dracut-config-generic-033-535.el7.x86_64                 229/297
+    amazon-ebs: Cleanup    : 1:grub2-common-2.02-0.65.el7.centos.2.noarch             230/297
+    amazon-ebs: Cleanup    : kbd-legacy-1.15.5-13.el7.noarch                          231/297
+    amazon-ebs: Cleanup    : kbd-misc-1.15.5-13.el7.noarch                            232/297
+    amazon-ebs: Cleanup    : 32:bind-license-9.9.4-61.el7.noarch                      233/297
+    amazon-ebs: Cleanup    : iwl7265-firmware-22.0.7.0-62.1.el7_5.noarch              234/297
+    amazon-ebs: Cleanup    : 1:dbus-libs-1.10.24-7.el7.x86_64                         235/297
+    amazon-ebs: Cleanup    : procps-ng-3.3.10-17.el7_5.2.x86_64                       236/297
+    amazon-ebs: Cleanup    : util-linux-2.23.2-52.el7.x86_64                          237/297
+    amazon-ebs: Cleanup    : kpartx-0.4.9-119.el7.x86_64                              238/297
+    amazon-ebs: Cleanup    : cryptsetup-libs-1.7.4-4.el7.x86_64                       239/297
+    amazon-ebs: Cleanup    : systemd-libs-219-57.el7.x86_64                           240/297
+    amazon-ebs: Cleanup    : kmod-20-21.el7.x86_64                                    241/297
+    amazon-ebs: Cleanup    : dracut-033-535.el7.x86_64                                242/297
+    amazon-ebs: Cleanup    : 7:device-mapper-libs-1.02.146-4.el7.x86_64               243/297
+    amazon-ebs: Cleanup    : 7:device-mapper-1.02.146-4.el7.x86_64                    244/297
+    amazon-ebs: Cleanup    : elfutils-libs-0.170-4.el7.x86_64                         245/297
+    amazon-ebs: Cleanup    : elfutils-default-yama-scope-0.170-4.el7.noarch           246/297
+    amazon-ebs: Cleanup    : 1:dbus-1.10.24-7.el7.x86_64                              247/297
+    amazon-ebs: Cleanup    : systemd-219-57.el7.x86_64                                248/297
+    amazon-ebs: Cleanup    : curl-7.29.0-46.el7.x86_64                                249/297
+    amazon-ebs: Cleanup    : libcurl-7.29.0-46.el7.x86_64                             250/297
+    amazon-ebs: Cleanup    : openldap-2.4.44-15.el7_5.x86_64                          251/297
+    amazon-ebs: Cleanup    : rpm-libs-4.11.3-32.el7.x86_64                            252/297
+    amazon-ebs: Cleanup    : rpm-4.11.3-32.el7.x86_64                                 253/297
+    amazon-ebs: Cleanup    : nss-tools-3.36.0-5.el7_5.x86_64                          254/297
+    amazon-ebs: Cleanup    : nss-pem-1.0.3-4.el7.x86_64                               255/297
+    amazon-ebs: Cleanup    : nss-sysinit-3.36.0-5.el7_5.x86_64                        256/297
+    amazon-ebs: Cleanup    : nss-3.36.0-5.el7_5.x86_64                                257/297
+    amazon-ebs: Cleanup    : 2:shadow-utils-4.1.5.1-24.el7.x86_64                     258/297
+    amazon-ebs: Cleanup    : libsemanage-2.5-11.el7.x86_64                            259/297
+    amazon-ebs: Cleanup    : libmount-2.23.2-52.el7.x86_64                            260/297
+    amazon-ebs: Cleanup    : libblkid-2.23.2-52.el7.x86_64                            261/297
+    amazon-ebs: Cleanup    : binutils-2.27-27.base.el7.x86_64                         262/297
+    amazon-ebs: Cleanup    : python-2.7.5-68.el7.x86_64                               263/297
+    amazon-ebs: Cleanup    : python-libs-2.7.5-68.el7.x86_64                          264/297
+    amazon-ebs: Cleanup    : 1:findutils-4.5.11-5.el7.x86_64                          265/297
+    amazon-ebs: Cleanup    : libssh2-1.4.3-10.el7_2.1.x86_64                          266/297
+    amazon-ebs: Cleanup    : kmod-libs-20-21.el7.x86_64                               267/297
+    amazon-ebs: Cleanup    : 2:tar-1.26-34.el7.x86_64                                 268/297
+    amazon-ebs: Cleanup    : elfutils-libelf-0.170-4.el7.x86_64                       269/297
+    amazon-ebs: Cleanup    : setup-2.8.71-9.el7.noarch                                270/297
+    amazon-ebs: Cleanup    : centos-release-7-5.1804.el7.centos.2.x86_64              271/297
+    amazon-ebs: Cleanup    : krb5-libs-1.15.1-19.el7.x86_64                           272/297
+    amazon-ebs: Cleanup    : coreutils-8.22-21.el7.x86_64                             273/297
+    amazon-ebs: Cleanup    : 1:openssl-libs-1.0.2k-12.el7.x86_64                      274/297
+    amazon-ebs: Cleanup    : libcom_err-1.42.9-12.el7_5.x86_64                        275/297
+    amazon-ebs: Cleanup    : zlib-1.2.7-17.el7.x86_64                                 276/297
+    amazon-ebs: Cleanup    : libuuid-2.23.2-52.el7.x86_64                             277/297
+    amazon-ebs: Cleanup    : audit-libs-2.8.1-3.el7.x86_64                            278/297
+    amazon-ebs: Cleanup    : nss-util-3.36.0-1.el7_5.x86_64                           279/297
+    amazon-ebs: Cleanup    : libteam-1.27-4.el7.x86_64                                280/297
+    amazon-ebs: Cleanup    : kernel-tools-libs-3.10.0-862.3.2.el7.x86_64              281/297
+    amazon-ebs: Cleanup    : sg3_utils-libs-1.37-12.el7.x86_64                        282/297
+    amazon-ebs: Cleanup    : libbasicobjects-0.1.1-29.el7.x86_64                      283/297
+    amazon-ebs: Cleanup    : libcollection-0.7.0-29.el7.x86_64                        284/297
+    amazon-ebs: Cleanup    : libpath_utils-0.2.1-29.el7.x86_64                        285/297
+    amazon-ebs: Cleanup    : libref_array-0.1.5-29.el7.x86_64                         286/297
+    amazon-ebs: Cleanup    : libfastjson-0.99.4-2.el7.x86_64                          287/297
+    amazon-ebs: Cleanup    : 2:ethtool-4.8-7.el7.x86_64                               288/297
+    amazon-ebs: Cleanup    : checkpolicy-2.5-6.el7.x86_64                             289/297
+    amazon-ebs: Cleanup    : 1:dmidecode-3.0-5.el7.x86_64                             290/297
+    amazon-ebs: Cleanup    : bash-4.2.46-30.el7.x86_64                                291/297
+    amazon-ebs: Cleanup    : libsepol-2.5-8.1.el7.x86_64                              292/297
+    amazon-ebs: Cleanup    : libselinux-2.5-12.el7.x86_64                             293/297
+    amazon-ebs: Cleanup    : glibc-common-2.17-222.el7.x86_64                         294/297
+    amazon-ebs: Cleanup    : glibc-2.17-222.el7.x86_64                                295/297
+    amazon-ebs: Cleanup    : tzdata-2018e-3.el7.noarch                                296/297
+    amazon-ebs: Cleanup    : libgcc-4.8.5-28.el7_5.1.x86_64                           297/297
+    amazon-ebs: Verifying  : kexec-tools-2.0.15-21.el7_6.3.x86_64                       1/297
+    amazon-ebs: Verifying  : 2:postfix-2.10.1-7.el7.x86_64                              2/297
+    amazon-ebs: Verifying  : rpm-python-4.11.3-35.el7.x86_64                            3/297
+    amazon-ebs: Verifying  : kernel-tools-libs-3.10.0-957.21.3.el7.x86_64               4/297
+    amazon-ebs: Verifying  : iproute-4.11.0-14.el7_6.2.x86_64                           5/297
+    amazon-ebs: Verifying  : libblkid-2.23.2-59.el7_6.1.x86_64                          6/297
+    amazon-ebs: Verifying  : glib2-2.56.1-4.el7_6.x86_64                                7/297
+    amazon-ebs: Verifying  : 1:grub2-pc-modules-2.02-0.76.el7.centos.1.noarch           8/297
+    amazon-ebs: Verifying  : 2:libpng-1.5.13-7.el7_2.x86_64                             9/297
+    amazon-ebs: Verifying  : policycoreutils-2.5-29.el7_6.1.x86_64                     10/297
+    amazon-ebs: Verifying  : teamd-1.27-5.el7.x86_64                                   11/297
+    amazon-ebs: Verifying  : 1:grub2-common-2.02-0.76.el7.centos.1.noarch              12/297
+    amazon-ebs: Verifying  : tuned-2.10.0-6.el7_6.3.noarch                             13/297
+    amazon-ebs: Verifying  : GeoIP-1.5.0-13.el7.x86_64                                 14/297
+    amazon-ebs: Verifying  : file-libs-5.11-35.el7.x86_64                              15/297
+    amazon-ebs: Verifying  : cronie-1.4.11-20.el7_6.x86_64                             16/297
+    amazon-ebs: Verifying  : nss-pem-1.0.3-5.el7_6.1.x86_64                            17/297
+    amazon-ebs: Verifying  : python-jinja2-2.7.2-3.el7_6.noarch                        18/297
+    amazon-ebs: Verifying  : libselinux-python-2.5-14.1.el7.x86_64                     19/297
+    amazon-ebs: Verifying  : e2fsprogs-libs-1.42.9-13.el7.x86_64                       20/297
+    amazon-ebs: Verifying  : python-perf-3.10.0-957.21.3.el7.x86_64                    21/297
+    amazon-ebs: Verifying  : coreutils-8.22-23.el7.x86_64                              22/297
+    amazon-ebs: Verifying  : file-5.11-35.el7.x86_64                                   23/297
+    amazon-ebs: Verifying  : libss-1.42.9-13.el7.x86_64                                24/297
+    amazon-ebs: Verifying  : libsemanage-2.5-14.el7.x86_64                             25/297
+    amazon-ebs: Verifying  : logrotate-3.8.6-17.el7.x86_64                             26/297
+    amazon-ebs: Verifying  : 1:openssl-libs-1.0.2k-16.el7_6.1.x86_64                   27/297
+    amazon-ebs: Verifying  : 7:device-mapper-1.02.149-10.el7_6.7.x86_64                28/297
+    amazon-ebs: Verifying  : cronie-anacron-1.4.11-20.el7_6.x86_64                     29/297
+    amazon-ebs: Verifying  : 1:mariadb-libs-5.5.60-1.el7_5.x86_64                      30/297
+    amazon-ebs: Verifying  : cloud-init-18.2-1.el7.centos.2.x86_64                     31/297
+    amazon-ebs: Verifying  : libuuid-2.23.2-59.el7_6.1.x86_64                          32/297
+    amazon-ebs: Verifying  : libpath_utils-0.2.1-32.el7.x86_64                         33/297
+    amazon-ebs: Verifying  : rpm-4.11.3-35.el7.x86_64                                  34/297
+    amazon-ebs: Verifying  : systemd-libs-219-62.el7_6.6.x86_64                        35/297
+    amazon-ebs: Verifying  : libcgroup-0.41-20.el7.x86_64                              36/297
+    amazon-ebs: Verifying  : 1:grub2-pc-2.02-0.76.el7.centos.1.x86_64                  37/297
+    amazon-ebs: Verifying  : rsyslog-8.24.0-34.el7.x86_64                              38/297
+    amazon-ebs: Verifying  : nss-3.36.0-7.1.el7_6.x86_64                               39/297
+    amazon-ebs: Verifying  : libstdc++-4.8.5-36.el7_6.2.x86_64                         40/297
+    amazon-ebs: Verifying  : nss-tools-3.36.0-7.1.el7_6.x86_64                         41/297
+    amazon-ebs: Verifying  : bash-4.2.46-31.el7.x86_64                                 42/297
+    amazon-ebs: Verifying  : rpm-libs-4.11.3-35.el7.x86_64                             43/297
+    amazon-ebs: Verifying  : 1:wpa_supplicant-2.6-12.el7.x86_64                        44/297
+    amazon-ebs: Verifying  : libbasicobjects-0.1.1-32.el7.x86_64                       45/297
+    amazon-ebs: Verifying  : libmount-2.23.2-59.el7_6.1.x86_64                         46/297
+    amazon-ebs: Verifying  : 32:bind-license-9.9.4-74.el7_6.1.noarch                   47/297
+    amazon-ebs: Verifying  : kbd-misc-1.15.5-15.el7.noarch                             48/297
+    amazon-ebs: Verifying  : krb5-libs-1.15.1-37.el7_6.x86_64                          49/297
+    amazon-ebs: Verifying  : hwdata-0.252-9.1.el7.x86_64                               50/297
+    amazon-ebs: Verifying  : rpm-build-libs-4.11.3-35.el7.x86_64                       51/297
+    amazon-ebs: Verifying  : cryptsetup-libs-2.0.3-3.el7.x86_64                        52/297
+    amazon-ebs: Verifying  : 1:openssl-1.0.2k-16.el7_6.1.x86_64                        53/297
+    amazon-ebs: Verifying  : elfutils-libelf-0.172-2.el7.x86_64                        54/297
+    amazon-ebs: Verifying  : libtirpc-0.2.4-0.15.el7.x86_64                            55/297
+    amazon-ebs: Verifying  : 1:grub2-tools-2.02-0.76.el7.centos.1.x86_64               56/297
+    amazon-ebs: Verifying  : nss-sysinit-3.36.0-7.1.el7_6.x86_64                       57/297
+    amazon-ebs: Verifying  : rpcbind-0.2.0-47.el7.x86_64                               58/297
+    amazon-ebs: Verifying  : libref_array-0.1.5-32.el7.x86_64                          59/297
+    amazon-ebs: Verifying  : 2:microcode_ctl-2.1-47.4.el7_6.x86_64                     60/297
+    amazon-ebs: Verifying  : libsmartcols-2.23.2-59.el7_6.1.x86_64                     61/297
+    amazon-ebs: Verifying  : python-linux-procfs-0.4.9-4.el7.noarch                    62/297
+    amazon-ebs: Verifying  : libcroco-0.6.12-4.el7.x86_64                              63/297
+    amazon-ebs: Verifying  : yum-utils-1.1.31-50.el7.noarch                            64/297
+    amazon-ebs: Verifying  : setup-2.8.71-10.el7.noarch                                65/297
+    amazon-ebs: Verifying  : centos-release-7-6.1810.2.el7.centos.x86_64               66/297
+    amazon-ebs: Verifying  : 32:bind-libs-lite-9.9.4-74.el7_6.1.x86_64                 67/297
+    amazon-ebs: Verifying  : libcom_err-1.42.9-13.el7.x86_64                           68/297
+    amazon-ebs: Verifying  : yum-3.4.3-161.el7.centos.noarch                           69/297
+    amazon-ebs: Verifying  : python-libs-2.7.5-77.el7_6.x86_64                         70/297
+    amazon-ebs: Verifying  : openldap-2.4.44-21.el7_6.x86_64                           71/297
+    amazon-ebs: Verifying  : libselinux-2.5-14.1.el7.x86_64                            72/297
+    amazon-ebs: Verifying  : grubby-8.28-25.el7.x86_64                                 73/297
+    amazon-ebs: Verifying  : audit-libs-python-2.8.4-4.el7.x86_64                      74/297
+    amazon-ebs: Verifying  : libsepol-2.5-10.el7.x86_64                                75/297
+    amazon-ebs: Verifying  : libssh2-1.4.3-12.el7_6.2.x86_64                           76/297
+    amazon-ebs: Verifying  : 2:shadow-utils-4.1.5.1-25.el7_6.1.x86_64                  77/297
+    amazon-ebs: Verifying  : 1:grub2-2.02-0.76.el7.centos.1.x86_64                     78/297
+    amazon-ebs: Verifying  : libfastjson-0.99.4-3.el7.x86_64                           79/297
+    amazon-ebs: Verifying  : dracut-033-554.el7.x86_64                                 80/297
+    amazon-ebs: Verifying  : initscripts-9.49.46-1.el7.x86_64                          81/297
+    amazon-ebs: Verifying  : tzdata-2019a-1.el7.noarch                                 82/297
+    amazon-ebs: Verifying  : python-urlgrabber-3.10-9.el7.noarch                       83/297
+    amazon-ebs: Verifying  : sudo-1.8.23-3.el7.x86_64                                  84/297
+    amazon-ebs: Verifying  : gobject-introspection-1.56.1-1.el7.x86_64                 85/297
+    amazon-ebs: Verifying  : systemd-sysv-219-62.el7_6.6.x86_64                        86/297
+    amazon-ebs: Verifying  : gnupg2-2.0.22-5.el7_5.x86_64                              87/297
+    amazon-ebs: Verifying  : binutils-2.27-34.base.el7.x86_64                          88/297
+    amazon-ebs: Verifying  : sg3_utils-1.37-17.el7.x86_64                              89/297
+    amazon-ebs: Verifying  : libgomp-4.8.5-36.el7_6.2.x86_64                           90/297
+    amazon-ebs: Verifying  : glibc-2.17-260.el7_6.5.x86_64                             91/297
+    amazon-ebs: Verifying  : selinux-policy-targeted-3.13.1-229.el7_6.12.noarch        92/297
+    amazon-ebs: Verifying  : selinux-policy-3.13.1-229.el7_6.12.noarch                 93/297
+    amazon-ebs: Verifying  : 1:dmidecode-3.1-2.el7.x86_64                              94/297
+    amazon-ebs: Verifying  : kbd-legacy-1.15.5-15.el7.noarch                           95/297
+    amazon-ebs: Verifying  : policycoreutils-python-2.5-29.el7_6.1.x86_64              96/297
+    amazon-ebs: Verifying  : kmod-20-23.el7.x86_64                                     97/297
+    amazon-ebs: Verifying  : 1:dbus-libs-1.10.24-13.el7_6.x86_64                       98/297
+    amazon-ebs: Verifying  : elfutils-default-yama-scope-0.172-2.el7.noarch            99/297
+    amazon-ebs: Verifying  : 7:device-mapper-libs-1.02.149-10.el7_6.7.x86_64          100/297
+    amazon-ebs: Verifying  : kbd-1.15.5-15.el7.x86_64                                 101/297
+    amazon-ebs: Verifying  : 1:dbus-1.10.24-13.el7_6.x86_64                           102/297
+    amazon-ebs: Verifying  : dracut-config-generic-033-554.el7.x86_64                 103/297
+    amazon-ebs: Verifying  : libcurl-7.29.0-51.el7.x86_64                             104/297
+    amazon-ebs: Verifying  : iptables-1.4.21-28.el7.x86_64                            105/297
+    amazon-ebs: Verifying  : 1:findutils-4.5.11-6.el7.x86_64                          106/297
+    amazon-ebs: Verifying  : libselinux-utils-2.5-14.1.el7.x86_64                     107/297
+    amazon-ebs: Verifying  : elfutils-libs-0.172-2.el7.x86_64                         108/297
+    amazon-ebs: Verifying  : 1:grub2-tools-minimal-2.02-0.76.el7.centos.1.x86_64      109/297
+    amazon-ebs: Verifying  : freetype-2.8-12.el7_6.1.x86_64                           110/297
+    amazon-ebs: Verifying  : zlib-1.2.7-18.el7.x86_64                                 111/297
+    amazon-ebs: Verifying  : 1:grub2-tools-extra-2.02-0.76.el7.centos.1.x86_64        112/297
+    amazon-ebs: Verifying  : 2:ethtool-4.8-9.el7.x86_64                               113/297
+    amazon-ebs: Verifying  : kpartx-0.4.9-123.el7.x86_64                              114/297
+    amazon-ebs: Verifying  : sg3_utils-libs-1.37-17.el7.x86_64                        115/297
+    amazon-ebs: Verifying  : linux-firmware-20180911-69.git85c5d90.el7.noarch         116/297
+    amazon-ebs: Verifying  : kernel-3.10.0-957.21.3.el7.x86_64                        117/297
+    amazon-ebs: Verifying  : 2:tar-1.26-35.el7.x86_64                                 118/297
+    amazon-ebs: Verifying  : dracut-config-rescue-033-554.el7.x86_64                  119/297
+    amazon-ebs: Verifying  : libteam-1.27-5.el7.x86_64                                120/297
+    amazon-ebs: Verifying  : util-linux-2.23.2-59.el7_6.1.x86_64                      121/297
+    amazon-ebs: Verifying  : rsync-3.1.2-6.el7_6.1.x86_64                             122/297
+    amazon-ebs: Verifying  : procps-ng-3.3.10-23.el7.x86_64                           123/297
+    amazon-ebs: Verifying  : nss-util-3.36.0-1.1.el7_6.x86_64                         124/297
+    amazon-ebs: Verifying  : audit-libs-2.8.4-4.el7.x86_64                            125/297
+    amazon-ebs: Verifying  : iwl7265-firmware-22.0.7.0-69.el7.noarch                  126/297
+    amazon-ebs: Verifying  : audit-2.8.4-4.el7.x86_64                                 127/297
+    amazon-ebs: Verifying  : kmod-libs-20-23.el7.x86_64                               128/297
+    amazon-ebs: Verifying  : yum-plugin-fastestmirror-1.1.31-50.el7.noarch            129/297
+    amazon-ebs: Verifying  : libgcc-4.8.5-36.el7_6.2.x86_64                           130/297
+    amazon-ebs: Verifying  : glibc-common-2.17-260.el7_6.5.x86_64                     131/297
+    amazon-ebs: Verifying  : polkit-0.112-18.el7_6.1.x86_64                           132/297
+    amazon-ebs: Verifying  : man-db-2.6.3-11.el7.x86_64                               133/297
+    amazon-ebs: Verifying  : libini_config-1.3.1-32.el7.x86_64                        134/297
+    amazon-ebs: Verifying  : json-c-0.11-4.el7_0.x86_64                               135/297
+    amazon-ebs: Verifying  : libsemanage-python-2.5-14.el7.x86_64                     136/297
+    amazon-ebs: Verifying  : net-tools-2.0-0.24.20131004git.el7.x86_64                137/297
+    amazon-ebs: Verifying  : dracut-network-033-554.el7.x86_64                        138/297
+    amazon-ebs: Verifying  : 1:nfs-utils-1.3.0-0.61.el7.x86_64                        139/297
+    amazon-ebs: Verifying  : gssproxy-0.7.0-21.el7.x86_64                             140/297
+    amazon-ebs: Verifying  : libcollection-0.7.0-32.el7.x86_64                        141/297
+    amazon-ebs: Verifying  : checkpolicy-2.5-8.el7.x86_64                             142/297
+    amazon-ebs: Verifying  : systemd-219-62.el7_6.6.x86_64                            143/297
+    amazon-ebs: Verifying  : e2fsprogs-1.42.9-13.el7.x86_64                           144/297
+    amazon-ebs: Verifying  : setools-libs-3.3.8-4.el7.x86_64                          145/297
+    amazon-ebs: Verifying  : 10:qemu-guest-agent-2.12.0-2.el7.x86_64                  146/297
+    amazon-ebs: Verifying  : xfsprogs-4.5.0-19.el7_6.x86_64                           147/297
+    amazon-ebs: Verifying  : curl-7.29.0-51.el7.x86_64                                148/297
+    amazon-ebs: Verifying  : 2:vim-minimal-7.4.160-5.el7.x86_64                       149/297
+    amazon-ebs: Verifying  : kernel-tools-3.10.0-957.21.3.el7.x86_64                  150/297
+    amazon-ebs: Verifying  : python-2.7.5-77.el7_6.x86_64                             151/297
+    amazon-ebs: Verifying  : python-libs-2.7.5-68.el7.x86_64                          152/297
+    amazon-ebs: Verifying  : libsemanage-python-2.5-11.el7.x86_64                     153/297
+    amazon-ebs: Verifying  : libselinux-python-2.5-12.el7.x86_64                      154/297
+    amazon-ebs: Verifying  : teamd-1.27-4.el7.x86_64                                  155/297
+    amazon-ebs: Verifying  : yum-utils-1.1.31-45.el7.noarch                           156/297
+    amazon-ebs: Verifying  : kernel-tools-3.10.0-862.3.2.el7.x86_64                   157/297
+    amazon-ebs: Verifying  : libbasicobjects-0.1.1-29.el7.x86_64                      158/297
+    amazon-ebs: Verifying  : yum-3.4.3-158.el7.centos.noarch                          159/297
+    amazon-ebs: Verifying  : file-5.11-33.el7.x86_64                                  160/297
+    amazon-ebs: Verifying  : polkit-0.112-14.el7.x86_64                               161/297
+    amazon-ebs: Verifying  : libref_array-0.1.5-29.el7.x86_64                         162/297
+    amazon-ebs: Verifying  : kexec-tools-2.0.15-13.el7.x86_64                         163/297
+    amazon-ebs: Verifying  : libgomp-4.8.5-28.el7_5.1.x86_64                          164/297
+    amazon-ebs: Verifying  : 1:grub2-2.02-0.65.el7.centos.2.x86_64                    165/297
+    amazon-ebs: Verifying  : libcom_err-1.42.9-12.el7_5.x86_64                        166/297
+    amazon-ebs: Verifying  : policycoreutils-python-2.5-22.el7.x86_64                 167/297
+    amazon-ebs: Verifying  : sg3_utils-libs-1.37-12.el7.x86_64                        168/297
+    amazon-ebs: Verifying  : kbd-legacy-1.15.5-13.el7.noarch                          169/297
+    amazon-ebs: Verifying  : rpcbind-0.2.0-44.el7.x86_64                              170/297
+    amazon-ebs: Verifying  : file-libs-5.11-33.el7.x86_64                             171/297
+    amazon-ebs: Verifying  : grubby-8.28-23.el7.x86_64                                172/297
+    amazon-ebs: Verifying  : dracut-033-535.el7.x86_64                                173/297
+    amazon-ebs: Verifying  : gobject-introspection-1.50.0-1.el7.x86_64                174/297
+    amazon-ebs: Verifying  : curl-7.29.0-46.el7.x86_64                                175/297
+    amazon-ebs: Verifying  : man-db-2.6.3-9.el7.x86_64                                176/297
+    amazon-ebs: Verifying  : util-linux-2.23.2-52.el7.x86_64                          177/297
+    amazon-ebs: Verifying  : systemd-sysv-219-57.el7.x86_64                           178/297
+    amazon-ebs: Verifying  : sg3_utils-1.37-12.el7.x86_64                             179/297
+    amazon-ebs: Verifying  : iptables-1.4.21-24.1.el7_5.x86_64                        180/297
+    amazon-ebs: Verifying  : logrotate-3.8.6-15.el7.x86_64                            181/297
+    amazon-ebs: Verifying  : dracut-network-033-535.el7.x86_64                        182/297
+    amazon-ebs: Verifying  : python-perf-3.10.0-862.3.2.el7.x86_64                    183/297
+    amazon-ebs: Verifying  : 1:grub2-tools-extra-2.02-0.65.el7.centos.2.x86_64        184/297
+    amazon-ebs: Verifying  : cloud-init-0.7.9-24.el7.centos.x86_64                    185/297
+    amazon-ebs: Verifying  : 7:device-mapper-1.02.146-4.el7.x86_64                    186/297
+    amazon-ebs: Verifying  : kbd-misc-1.15.5-13.el7.noarch                            187/297
+    amazon-ebs: Verifying  : rpm-python-4.11.3-32.el7.x86_64                          188/297
+    amazon-ebs: Verifying  : cronie-anacron-1.4.11-19.el7.x86_64                      189/297
+    amazon-ebs: Verifying  : 32:bind-libs-lite-9.9.4-61.el7.x86_64                    190/297
+    amazon-ebs: Verifying  : zlib-1.2.7-17.el7.x86_64                                 191/297
+    amazon-ebs: Verifying  : 1:openssl-1.0.2k-12.el7.x86_64                           192/297
+    amazon-ebs: Verifying  : openldap-2.4.44-15.el7_5.x86_64                          193/297
+    amazon-ebs: Verifying  : gnupg2-2.0.22-4.el7.x86_64                               194/297
+    amazon-ebs: Verifying  : 7:device-mapper-libs-1.02.146-4.el7.x86_64               195/297
+    amazon-ebs: Verifying  : dracut-config-generic-033-535.el7.x86_64                 196/297
+    amazon-ebs: Verifying  : python-jinja2-2.7.2-2.el7.noarch                         197/297
+    amazon-ebs: Verifying  : setup-2.8.71-9.el7.noarch                                198/297
+    amazon-ebs: Verifying  : libtirpc-0.2.4-0.10.el7.x86_64                           199/297
+    amazon-ebs: Verifying  : net-tools-2.0-0.22.20131004git.el7.x86_64                200/297
+    amazon-ebs: Verifying  : 1:dbus-libs-1.10.24-7.el7.x86_64                         201/297
+    amazon-ebs: Verifying  : libcollection-0.7.0-29.el7.x86_64                        202/297
+    amazon-ebs: Verifying  : 1:openssl-libs-1.0.2k-12.el7.x86_64                      203/297
+    amazon-ebs: Verifying  : 2:ethtool-4.8-7.el7.x86_64                               204/297
+    amazon-ebs: Verifying  : binutils-2.27-27.base.el7.x86_64                         205/297
+    amazon-ebs: Verifying  : elfutils-default-yama-scope-0.170-4.el7.noarch           206/297
+    amazon-ebs: Verifying  : tuned-2.9.0-1.el7.noarch                                 207/297
+    amazon-ebs: Verifying  : xfsprogs-4.5.0-15.el7.x86_64                             208/297
+    amazon-ebs: Verifying  : 2:vim-minimal-7.4.160-4.el7.x86_64                       209/297
+    amazon-ebs: Verifying  : 1:nfs-utils-1.3.0-0.54.el7.x86_64                        210/297
+    amazon-ebs: Verifying  : 1:dmidecode-3.0-5.el7.x86_64                             211/297
+    amazon-ebs: Verifying  : glibc-2.17-222.el7.x86_64                                212/297
+    amazon-ebs: Verifying  : libcurl-7.29.0-46.el7.x86_64                             213/297
+    amazon-ebs: Verifying  : e2fsprogs-1.42.9-12.el7_5.x86_64                         214/297
+    amazon-ebs: Verifying  : libgcc-4.8.5-28.el7_5.1.x86_64                           215/297
+    amazon-ebs: Verifying  : audit-2.8.1-3.el7.x86_64                                 216/297
+    amazon-ebs: Verifying  : nss-pem-1.0.3-4.el7.x86_64                               217/297
+    amazon-ebs: Verifying  : rsyslog-8.24.0-16.el7_5.4.x86_64                         218/297
+    amazon-ebs: Verifying  : libcroco-0.6.11-1.el7.x86_64                             219/297
+    amazon-ebs: Verifying  : gssproxy-0.7.0-17.el7.x86_64                             220/297
+    amazon-ebs: Verifying  : 2:shadow-utils-4.1.5.1-24.el7.x86_64                     221/297
+    amazon-ebs: Verifying  : libsepol-2.5-8.1.el7.x86_64                              222/297
+    amazon-ebs: Verifying  : 32:bind-license-9.9.4-61.el7.noarch                      223/297
+    amazon-ebs: Verifying  : libpath_utils-0.2.1-29.el7.x86_64                        224/297
+    amazon-ebs: Verifying  : bash-4.2.46-30.el7.x86_64                                225/297
+    amazon-ebs: Verifying  : initscripts-9.49.41-1.el7.x86_64                         226/297
+    amazon-ebs: Verifying  : selinux-policy-3.13.1-192.el7_5.3.noarch                 227/297
+    amazon-ebs: Verifying  : 10:qemu-guest-agent-2.8.0-2.el7.x86_64                   228/297
+    amazon-ebs: Verifying  : rpm-build-libs-4.11.3-32.el7.x86_64                      229/297
+    amazon-ebs: Verifying  : libselinux-utils-2.5-12.el7.x86_64                       230/297
+    amazon-ebs: Verifying  : checkpolicy-2.5-6.el7.x86_64                             231/297
+    amazon-ebs: Verifying  : libuuid-2.23.2-52.el7.x86_64                             232/297
+    amazon-ebs: Verifying  : rpm-4.11.3-32.el7.x86_64                                 233/297
+    amazon-ebs: Verifying  : libsemanage-2.5-11.el7.x86_64                            234/297
+    amazon-ebs: Verifying  : tzdata-2018e-3.el7.noarch                                235/297
+    amazon-ebs: Verifying  : libmount-2.23.2-52.el7.x86_64                            236/297
+    amazon-ebs: Verifying  : rsync-3.1.2-4.el7.x86_64                                 237/297
+    amazon-ebs: Verifying  : audit-libs-2.8.1-3.el7.x86_64                            238/297
+    amazon-ebs: Verifying  : selinux-policy-targeted-3.13.1-192.el7_5.3.noarch        239/297
+    amazon-ebs: Verifying  : policycoreutils-2.5-22.el7.x86_64                        240/297
+    amazon-ebs: Verifying  : 1:grub2-common-2.02-0.65.el7.centos.2.noarch             241/297
+    amazon-ebs: Verifying  : krb5-libs-1.15.1-19.el7.x86_64                           242/297
+    amazon-ebs: Verifying  : python-linux-procfs-0.4.9-3.el7.noarch                   243/297
+    amazon-ebs: Verifying  : python-urlgrabber-3.10-8.el7.noarch                      244/297
+    amazon-ebs: Verifying  : libss-1.42.9-12.el7_5.x86_64                             245/297
+    amazon-ebs: Verifying  : kmod-20-21.el7.x86_64                                    246/297
+    amazon-ebs: Verifying  : elfutils-libs-0.170-4.el7.x86_64                         247/297
+    amazon-ebs: Verifying  : libcgroup-0.41-15.el7.x86_64                             248/297
+    amazon-ebs: Verifying  : e2fsprogs-libs-1.42.9-12.el7_5.x86_64                    249/297
+    amazon-ebs: Verifying  : 1:findutils-4.5.11-5.el7.x86_64                          250/297
+    amazon-ebs: Verifying  : libssh2-1.4.3-10.el7_2.1.x86_64                          251/297
+    amazon-ebs: Verifying  : audit-libs-python-2.8.1-3.el7.x86_64                     252/297
+    amazon-ebs: Verifying  : glibc-common-2.17-222.el7.x86_64                         253/297
+    amazon-ebs: Verifying  : python-2.7.5-68.el7.x86_64                               254/297
+    amazon-ebs: Verifying  : procps-ng-3.3.10-17.el7_5.2.x86_64                       255/297
+    amazon-ebs: Verifying  : 1:grub2-pc-2.02-0.65.el7.centos.2.x86_64                 256/297
+    amazon-ebs: Verifying  : 1:grub2-tools-2.02-0.65.el7.centos.2.x86_64              257/297
+    amazon-ebs: Verifying  : dracut-config-rescue-033-535.el7.x86_64                  258/297
+    amazon-ebs: Verifying  : yum-plugin-fastestmirror-1.1.31-45.el7.noarch            259/297
+    amazon-ebs: Verifying  : libselinux-2.5-12.el7.x86_64                             260/297
+    amazon-ebs: Verifying  : libfastjson-0.99.4-2.el7.x86_64                          261/297
+    amazon-ebs: Verifying  : 1:grub2-tools-minimal-2.02-0.65.el7.centos.2.x86_64      262/297
+    amazon-ebs: Verifying  : sudo-1.8.19p2-13.el7.x86_64                              263/297
+    amazon-ebs: Verifying  : nss-3.36.0-5.el7_5.x86_64                                264/297
+    amazon-ebs: Verifying  : elfutils-libelf-0.170-4.el7.x86_64                       265/297
+    amazon-ebs: Verifying  : libini_config-1.3.1-29.el7.x86_64                        266/297
+    amazon-ebs: Verifying  : 2:microcode_ctl-2.1-29.2.el7_5.x86_64                    267/297
+    amazon-ebs: Verifying  : nss-tools-3.36.0-5.el7_5.x86_64                          268/297
+    amazon-ebs: Verifying  : 2:postfix-2.10.1-6.el7.x86_64                            269/297
+    amazon-ebs: Verifying  : iproute-4.11.0-14.el7.x86_64                             270/297
+    amazon-ebs: Verifying  : libblkid-2.23.2-52.el7.x86_64                            271/297
+    amazon-ebs: Verifying  : setools-libs-3.3.8-2.el7.x86_64                          272/297
+    amazon-ebs: Verifying  : coreutils-8.22-21.el7.x86_64                             273/297
+    amazon-ebs: Verifying  : cryptsetup-libs-1.7.4-4.el7.x86_64                       274/297
+    amazon-ebs: Verifying  : 1:dbus-1.10.24-7.el7.x86_64                              275/297
+    amazon-ebs: Verifying  : kpartx-0.4.9-119.el7.x86_64                              276/297
+    amazon-ebs: Verifying  : libteam-1.27-4.el7.x86_64                                277/297
+    amazon-ebs: Verifying  : nss-sysinit-3.36.0-5.el7_5.x86_64                        278/297
+    amazon-ebs: Verifying  : kbd-1.15.5-13.el7.x86_64                                 279/297
+    amazon-ebs: Verifying  : centos-release-7-5.1804.el7.centos.2.x86_64              280/297
+    amazon-ebs: Verifying  : kmod-libs-20-21.el7.x86_64                               281/297
+    amazon-ebs: Verifying  : iwl7265-firmware-22.0.7.0-62.1.el7_5.noarch              282/297
+    amazon-ebs: Verifying  : freetype-2.4.11-15.el7.x86_64                            283/297
+    amazon-ebs: Verifying  : systemd-219-57.el7.x86_64                                284/297
+    amazon-ebs: Verifying  : kernel-tools-libs-3.10.0-862.3.2.el7.x86_64              285/297
+    amazon-ebs: Verifying  : hwdata-0.252-8.8.el7.x86_64                              286/297
+    amazon-ebs: Verifying  : systemd-libs-219-57.el7.x86_64                           287/297
+    amazon-ebs: Verifying  : cronie-1.4.11-19.el7.x86_64                              288/297
+    amazon-ebs: Verifying  : nss-util-3.36.0-1.el7_5.x86_64                           289/297
+    amazon-ebs: Verifying  : glib2-2.54.2-2.el7.x86_64                                290/297
+    amazon-ebs: Verifying  : GeoIP-1.5.0-11.el7.x86_64                                291/297
+    amazon-ebs: Verifying  : 2:tar-1.26-34.el7.x86_64                                 292/297
+    amazon-ebs: Verifying  : 1:wpa_supplicant-2.6-9.el7.x86_64                        293/297
+    amazon-ebs: Verifying  : 1:mariadb-libs-5.5.56-2.el7.x86_64                       294/297
+    amazon-ebs: Verifying  : 1:grub2-pc-modules-2.02-0.65.el7.centos.2.noarch         295/297
+    amazon-ebs: Verifying  : rpm-libs-4.11.3-32.el7.x86_64                            296/297
+    amazon-ebs: Verifying  : libstdc++-4.8.5-28.el7_5.1.x86_64                        297/297
+    amazon-ebs:
+    amazon-ebs: Installed:
+    amazon-ebs: grub2.x86_64 1:2.02-0.76.el7.centos.1
+    amazon-ebs: grub2-tools.x86_64 1:2.02-0.76.el7.centos.1
+    amazon-ebs: grub2-tools-extra.x86_64 1:2.02-0.76.el7.centos.1
+    amazon-ebs: grub2-tools-minimal.x86_64 1:2.02-0.76.el7.centos.1
+    amazon-ebs: kernel.x86_64 0:3.10.0-957.21.3.el7
+    amazon-ebs:
+    amazon-ebs: Dependency Installed:
+    amazon-ebs: json-c.x86_64 0:0.11-4.el7_0
+    amazon-ebs: libpng.x86_64 2:1.5.13-7.el7_2
+    amazon-ebs: libsmartcols.x86_64 0:2.23.2-59.el7_6.1
+    amazon-ebs: linux-firmware.noarch 0:20180911-69.git85c5d90.el7
+    amazon-ebs:
+    amazon-ebs: Updated:
+    amazon-ebs: GeoIP.x86_64 0:1.5.0-13.el7
+    amazon-ebs: audit.x86_64 0:2.8.4-4.el7
+    amazon-ebs: audit-libs.x86_64 0:2.8.4-4.el7
+    amazon-ebs: audit-libs-python.x86_64 0:2.8.4-4.el7
+    amazon-ebs: bash.x86_64 0:4.2.46-31.el7
+    amazon-ebs: bind-libs-lite.x86_64 32:9.9.4-74.el7_6.1
+    amazon-ebs: bind-license.noarch 32:9.9.4-74.el7_6.1
+    amazon-ebs: binutils.x86_64 0:2.27-34.base.el7
+    amazon-ebs: centos-release.x86_64 0:7-6.1810.2.el7.centos
+    amazon-ebs: checkpolicy.x86_64 0:2.5-8.el7
+    amazon-ebs: cloud-init.x86_64 0:18.2-1.el7.centos.2
+    amazon-ebs: coreutils.x86_64 0:8.22-23.el7
+    amazon-ebs: cronie.x86_64 0:1.4.11-20.el7_6
+    amazon-ebs: cronie-anacron.x86_64 0:1.4.11-20.el7_6
+    amazon-ebs: cryptsetup-libs.x86_64 0:2.0.3-3.el7
+    amazon-ebs: curl.x86_64 0:7.29.0-51.el7
+    amazon-ebs: dbus.x86_64 1:1.10.24-13.el7_6
+    amazon-ebs: dbus-libs.x86_64 1:1.10.24-13.el7_6
+    amazon-ebs: device-mapper.x86_64 7:1.02.149-10.el7_6.7
+    amazon-ebs: device-mapper-libs.x86_64 7:1.02.149-10.el7_6.7
+    amazon-ebs: dmidecode.x86_64 1:3.1-2.el7
+    amazon-ebs: dracut.x86_64 0:033-554.el7
+    amazon-ebs: dracut-config-generic.x86_64 0:033-554.el7
+    amazon-ebs: dracut-config-rescue.x86_64 0:033-554.el7
+    amazon-ebs: dracut-network.x86_64 0:033-554.el7
+    amazon-ebs: e2fsprogs.x86_64 0:1.42.9-13.el7
+    amazon-ebs: e2fsprogs-libs.x86_64 0:1.42.9-13.el7
+    amazon-ebs: elfutils-default-yama-scope.noarch 0:0.172-2.el7
+    amazon-ebs: elfutils-libelf.x86_64 0:0.172-2.el7
+    amazon-ebs: elfutils-libs.x86_64 0:0.172-2.el7
+    amazon-ebs: ethtool.x86_64 2:4.8-9.el7
+    amazon-ebs: file.x86_64 0:5.11-35.el7
+    amazon-ebs: file-libs.x86_64 0:5.11-35.el7
+    amazon-ebs: findutils.x86_64 1:4.5.11-6.el7
+    amazon-ebs: freetype.x86_64 0:2.8-12.el7_6.1
+    amazon-ebs: glib2.x86_64 0:2.56.1-4.el7_6
+    amazon-ebs: glibc.x86_64 0:2.17-260.el7_6.5
+    amazon-ebs: glibc-common.x86_64 0:2.17-260.el7_6.5
+    amazon-ebs: gnupg2.x86_64 0:2.0.22-5.el7_5
+    amazon-ebs: gobject-introspection.x86_64 0:1.56.1-1.el7
+    amazon-ebs: grub2-common.noarch 1:2.02-0.76.el7.centos.1
+    amazon-ebs: grub2-pc.x86_64 1:2.02-0.76.el7.centos.1
+    amazon-ebs: grub2-pc-modules.noarch 1:2.02-0.76.el7.centos.1
+    amazon-ebs: grubby.x86_64 0:8.28-25.el7
+    amazon-ebs: gssproxy.x86_64 0:0.7.0-21.el7
+    amazon-ebs: hwdata.x86_64 0:0.252-9.1.el7
+    amazon-ebs: initscripts.x86_64 0:9.49.46-1.el7
+    amazon-ebs: iproute.x86_64 0:4.11.0-14.el7_6.2
+    amazon-ebs: iptables.x86_64 0:1.4.21-28.el7
+    amazon-ebs: iwl7265-firmware.noarch 0:22.0.7.0-69.el7
+    amazon-ebs: kbd.x86_64 0:1.15.5-15.el7
+    amazon-ebs: kbd-legacy.noarch 0:1.15.5-15.el7
+    amazon-ebs: kbd-misc.noarch 0:1.15.5-15.el7
+    amazon-ebs: kernel-tools.x86_64 0:3.10.0-957.21.3.el7
+    amazon-ebs: kernel-tools-libs.x86_64 0:3.10.0-957.21.3.el7
+    amazon-ebs: kexec-tools.x86_64 0:2.0.15-21.el7_6.3
+    amazon-ebs: kmod.x86_64 0:20-23.el7
+    amazon-ebs: kmod-libs.x86_64 0:20-23.el7
+    amazon-ebs: kpartx.x86_64 0:0.4.9-123.el7
+    amazon-ebs: krb5-libs.x86_64 0:1.15.1-37.el7_6
+    amazon-ebs: libbasicobjects.x86_64 0:0.1.1-32.el7
+    amazon-ebs: libblkid.x86_64 0:2.23.2-59.el7_6.1
+    amazon-ebs: libcgroup.x86_64 0:0.41-20.el7
+    amazon-ebs: libcollection.x86_64 0:0.7.0-32.el7
+    amazon-ebs: libcom_err.x86_64 0:1.42.9-13.el7
+    amazon-ebs: libcroco.x86_64 0:0.6.12-4.el7
+    amazon-ebs: libcurl.x86_64 0:7.29.0-51.el7
+    amazon-ebs: libfastjson.x86_64 0:0.99.4-3.el7
+    amazon-ebs: libgcc.x86_64 0:4.8.5-36.el7_6.2
+    amazon-ebs: libgomp.x86_64 0:4.8.5-36.el7_6.2
+    amazon-ebs: libini_config.x86_64 0:1.3.1-32.el7
+    amazon-ebs: libmount.x86_64 0:2.23.2-59.el7_6.1
+    amazon-ebs: libpath_utils.x86_64 0:0.2.1-32.el7
+    amazon-ebs: libref_array.x86_64 0:0.1.5-32.el7
+    amazon-ebs: libselinux.x86_64 0:2.5-14.1.el7
+    amazon-ebs: libselinux-python.x86_64 0:2.5-14.1.el7
+    amazon-ebs: libselinux-utils.x86_64 0:2.5-14.1.el7
+    amazon-ebs: libsemanage.x86_64 0:2.5-14.el7
+    amazon-ebs: libsemanage-python.x86_64 0:2.5-14.el7
+    amazon-ebs: libsepol.x86_64 0:2.5-10.el7
+    amazon-ebs: libss.x86_64 0:1.42.9-13.el7
+    amazon-ebs: libssh2.x86_64 0:1.4.3-12.el7_6.2
+    amazon-ebs: libstdc++.x86_64 0:4.8.5-36.el7_6.2
+    amazon-ebs: libteam.x86_64 0:1.27-5.el7
+    amazon-ebs: libtirpc.x86_64 0:0.2.4-0.15.el7
+    amazon-ebs: libuuid.x86_64 0:2.23.2-59.el7_6.1
+    amazon-ebs: logrotate.x86_64 0:3.8.6-17.el7
+    amazon-ebs: man-db.x86_64 0:2.6.3-11.el7
+    amazon-ebs: mariadb-libs.x86_64 1:5.5.60-1.el7_5
+    amazon-ebs: microcode_ctl.x86_64 2:2.1-47.4.el7_6
+    amazon-ebs: net-tools.x86_64 0:2.0-0.24.20131004git.el7
+    amazon-ebs: nfs-utils.x86_64 1:1.3.0-0.61.el7
+    amazon-ebs: nss.x86_64 0:3.36.0-7.1.el7_6
+    amazon-ebs: nss-pem.x86_64 0:1.0.3-5.el7_6.1
+    amazon-ebs: nss-sysinit.x86_64 0:3.36.0-7.1.el7_6
+    amazon-ebs: nss-tools.x86_64 0:3.36.0-7.1.el7_6
+    amazon-ebs: nss-util.x86_64 0:3.36.0-1.1.el7_6
+    amazon-ebs: openldap.x86_64 0:2.4.44-21.el7_6
+    amazon-ebs: openssl.x86_64 1:1.0.2k-16.el7_6.1
+    amazon-ebs: openssl-libs.x86_64 1:1.0.2k-16.el7_6.1
+    amazon-ebs: policycoreutils.x86_64 0:2.5-29.el7_6.1
+    amazon-ebs: policycoreutils-python.x86_64 0:2.5-29.el7_6.1
+    amazon-ebs: polkit.x86_64 0:0.112-18.el7_6.1
+    amazon-ebs: postfix.x86_64 2:2.10.1-7.el7
+    amazon-ebs: procps-ng.x86_64 0:3.3.10-23.el7
+    amazon-ebs: python.x86_64 0:2.7.5-77.el7_6
+    amazon-ebs: python-jinja2.noarch 0:2.7.2-3.el7_6
+    amazon-ebs: python-libs.x86_64 0:2.7.5-77.el7_6
+    amazon-ebs: python-linux-procfs.noarch 0:0.4.9-4.el7
+    amazon-ebs: python-perf.x86_64 0:3.10.0-957.21.3.el7
+    amazon-ebs: python-urlgrabber.noarch 0:3.10-9.el7
+    amazon-ebs: qemu-guest-agent.x86_64 10:2.12.0-2.el7
+    amazon-ebs: rpcbind.x86_64 0:0.2.0-47.el7
+    amazon-ebs: rpm.x86_64 0:4.11.3-35.el7
+    amazon-ebs: rpm-build-libs.x86_64 0:4.11.3-35.el7
+    amazon-ebs: rpm-libs.x86_64 0:4.11.3-35.el7
+    amazon-ebs: rpm-python.x86_64 0:4.11.3-35.el7
+    amazon-ebs: rsync.x86_64 0:3.1.2-6.el7_6.1
+    amazon-ebs: rsyslog.x86_64 0:8.24.0-34.el7
+    amazon-ebs: selinux-policy.noarch 0:3.13.1-229.el7_6.12
+    amazon-ebs: selinux-policy-targeted.noarch 0:3.13.1-229.el7_6.12
+    amazon-ebs: setools-libs.x86_64 0:3.3.8-4.el7
+    amazon-ebs: setup.noarch 0:2.8.71-10.el7
+    amazon-ebs: sg3_utils.x86_64 0:1.37-17.el7
+    amazon-ebs: sg3_utils-libs.x86_64 0:1.37-17.el7
+    amazon-ebs: shadow-utils.x86_64 2:4.1.5.1-25.el7_6.1
+    amazon-ebs: sudo.x86_64 0:1.8.23-3.el7
+    amazon-ebs: systemd.x86_64 0:219-62.el7_6.6
+    amazon-ebs: systemd-libs.x86_64 0:219-62.el7_6.6
+    amazon-ebs: systemd-sysv.x86_64 0:219-62.el7_6.6
+    amazon-ebs: tar.x86_64 2:1.26-35.el7
+    amazon-ebs: teamd.x86_64 0:1.27-5.el7
+    amazon-ebs: tuned.noarch 0:2.10.0-6.el7_6.3
+    amazon-ebs: tzdata.noarch 0:2019a-1.el7
+    amazon-ebs: util-linux.x86_64 0:2.23.2-59.el7_6.1
+    amazon-ebs: vim-minimal.x86_64 2:7.4.160-5.el7
+    amazon-ebs: wpa_supplicant.x86_64 1:2.6-12.el7
+    amazon-ebs: xfsprogs.x86_64 0:4.5.0-19.el7_6
+    amazon-ebs: yum.noarch 0:3.4.3-161.el7.centos
+    amazon-ebs: yum-plugin-fastestmirror.noarch 0:1.1.31-50.el7
+    amazon-ebs: yum-utils.noarch 0:1.1.31-50.el7
+    amazon-ebs: zlib.x86_64 0:1.2.7-18.el7
+    amazon-ebs:
+    amazon-ebs: Replaced:
+    amazon-ebs: grub2.x86_64 1:2.02-0.65.el7.centos.2
+    amazon-ebs: grub2-tools.x86_64 1:2.02-0.65.el7.centos.2
+    amazon-ebs:
+    amazon-ebs: Complete!
+    amazon-ebs:
+    amazon-ebs: ## Installing the NodeSource Node.js 10.x repo...
+    amazon-ebs:
+    amazon-ebs:
+    amazon-ebs: ## Inspecting system...
+    amazon-ebs:
+    amazon-ebs: + rpm -q --whatprovides redhat-release || rpm -q --whatprovides centos-release || rpm -q --whatprovides cloudlinux-release || rpm -q --whatprovides sl-release
+    amazon-ebs: + uname -m
+    amazon-ebs:
+    amazon-ebs: ## Confirming "el7-x86_64" is supported...
+    amazon-ebs:
+    amazon-ebs: + curl -sLf -o /dev/null 'https://rpm.nodesource.com/pub_10.x/el/7/x86_64/nodesource-release-el7-1.noarch.rpm'
+    amazon-ebs:
+    amazon-ebs: ## Downloading release setup RPM...
+    amazon-ebs:
+    amazon-ebs: + mktemp
+    amazon-ebs: + curl -sL -o '/tmp/tmp.FIVa55rwhw' 'https://rpm.nodesource.com/pub_10.x/el/7/x86_64/nodesource-release-el7-1.noarch.rpm'
+    amazon-ebs:
+    amazon-ebs: ## Installing release setup RPM...
+    amazon-ebs:
+    amazon-ebs: + rpm -i --nosignature --force '/tmp/tmp.FIVa55rwhw'
+    amazon-ebs:
+    amazon-ebs: ## Cleaning up...
+    amazon-ebs:
+    amazon-ebs: + rm -f '/tmp/tmp.FIVa55rwhw'
+    amazon-ebs:
+    amazon-ebs: ## Checking for existing installations...
+    amazon-ebs:
+    amazon-ebs: + rpm -qa 'node|npm' | grep -v nodesource
+    amazon-ebs:
+    amazon-ebs: ## Run `sudo yum install -y nodejs` to install Node.js 10.x and npm.
+    amazon-ebs: ## You may also need development tools to build native addons:
+    amazon-ebs: sudo yum install gcc-c++ make
+    amazon-ebs: ## To install the Yarn package manager, run:
+    amazon-ebs: curl -sL https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+    amazon-ebs: sudo yum install yarn
+    amazon-ebs:
+    amazon-ebs: Loaded plugins: fastestmirror
+    amazon-ebs: Loading mirror speeds from cached hostfile
+    amazon-ebs: * base: mirrors.advancedhosters.com
+    amazon-ebs: * extras: mirrors.advancedhosters.com
+    amazon-ebs: * updates: mirror.vcu.edu
+    amazon-ebs: Resolving Dependencies
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package nodejs.x86_64 2:10.16.0-1nodesource will be installed
+    amazon-ebs: --> Finished Dependency Resolution
+    amazon-ebs:
+    amazon-ebs: Dependencies Resolved
+    amazon-ebs:
+    amazon-ebs: ================================================================================
+    amazon-ebs: Package      Arch         Version                       Repository        Size
+    amazon-ebs: ================================================================================
+    amazon-ebs: Installing:
+    amazon-ebs: nodejs       x86_64       2:10.16.0-1nodesource         nodesource        19 M
+    amazon-ebs:
+    amazon-ebs: Transaction Summary
+    amazon-ebs: ================================================================================
+    amazon-ebs: Install  1 Package
+    amazon-ebs:
+    amazon-ebs: Total download size: 19 M
+    amazon-ebs: Installed size: 56 M
+    amazon-ebs: Downloading packages:
+    amazon-ebs: warning: /var/cache/yum/x86_64/7/nodesource/packages/nodejs-10.16.0-1nodesource.x86_64.rpm: Header V4 RSA/SHA512 Signature, key ID 34fa74dd: NOKEY
+    amazon-ebs: Importing GPG key 0x34FA74DD:
+    amazon-ebs: Public key for nodejs-10.16.0-1nodesource.x86_64.rpm is not installed
+    amazon-ebs: Userid     : "NodeSource <gpg-rpm@nodesource.com>"
+    amazon-ebs: Retrieving key from file:///etc/pki/rpm-gpg/NODESOURCE-GPG-SIGNING-KEY-EL
+    amazon-ebs: Running transaction check
+    amazon-ebs: Fingerprint: 2e55 207a 95d9 944b 0cc9 3261 5ddb e8d4 34fa 74dd
+    amazon-ebs: Package    : nodesource-release-el7-1.noarch (installed)
+    amazon-ebs: From       : /etc/pki/rpm-gpg/NODESOURCE-GPG-SIGNING-KEY-EL
+    amazon-ebs: Warning: RPMDB altered outside of yum.
+    amazon-ebs: Running transaction test
+    amazon-ebs: Transaction test succeeded
+    amazon-ebs: Running transaction
+    amazon-ebs: Installing : 2:nodejs-10.16.0-1nodesource.x86_64                          1/1
+    amazon-ebs: Verifying  : 2:nodejs-10.16.0-1nodesource.x86_64                          1/1
+    amazon-ebs:
+    amazon-ebs: Installed:
+    amazon-ebs: nodejs.x86_64 2:10.16.0-1nodesource
+    amazon-ebs:
+    amazon-ebs: Complete!
+    amazon-ebs: Loaded plugins: fastestmirror
+    amazon-ebs: Loading mirror speeds from cached hostfile
+    amazon-ebs: * base: mirrors.advancedhosters.com
+    amazon-ebs: * extras: mirrors.advancedhosters.com
+    amazon-ebs: * updates: mirror.vcu.edu
+    amazon-ebs: Resolving Dependencies
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package wget.x86_64 0:1.14-18.el7_6.1 will be installed
+    amazon-ebs: --> Finished Dependency Resolution
+    amazon-ebs:
+    amazon-ebs: Dependencies Resolved
+    amazon-ebs:
+    amazon-ebs: ================================================================================
+    amazon-ebs: Package       Arch            Version                   Repository        Size
+    amazon-ebs: ================================================================================
+    amazon-ebs: Installing:
+    amazon-ebs: wget          x86_64          1.14-18.el7_6.1           updates          547 k
+    amazon-ebs:
+    amazon-ebs: Transaction Summary
+    amazon-ebs: ================================================================================
+    amazon-ebs: Install  1 Package
+    amazon-ebs:
+    amazon-ebs: Total download size: 547 k
+    amazon-ebs: Installed size: 2.0 M
+    amazon-ebs: Downloading packages:
+    amazon-ebs: Running transaction check
+    amazon-ebs: Running transaction test
+    amazon-ebs: Transaction test succeeded
+    amazon-ebs: Running transaction
+    amazon-ebs: Installing : wget-1.14-18.el7_6.1.x86_64                                  1/1
+    amazon-ebs: Verifying  : wget-1.14-18.el7_6.1.x86_64                                  1/1
+    amazon-ebs:
+    amazon-ebs: Installed:
+    amazon-ebs: wget.x86_64 0:1.14-18.el7_6.1
+    amazon-ebs:
+    amazon-ebs: Complete!
+    amazon-ebs: Loaded plugins: fastestmirror
+    amazon-ebs: Loading mirror speeds from cached hostfile
+    amazon-ebs: * base: mirrors.advancedhosters.com
+    amazon-ebs: * extras: mirrors.advancedhosters.com
+    amazon-ebs: * updates: mirror.vcu.edu
+    amazon-ebs: Resolving Dependencies
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package git.x86_64 0:1.8.3.1-20.el7 will be installed
+    amazon-ebs: --> Processing Dependency: perl-Git = 1.8.3.1-20.el7 for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl >= 5.008 for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(warnings) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(vars) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(strict) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(lib) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Term::ReadKey) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Git) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Getopt::Long) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(File::stat) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(File::Temp) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(File::Spec) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(File::Path) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(File::Find) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(File::Copy) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(File::Basename) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Exporter) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Error) for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Processing Dependency: /usr/bin/perl for package: git-1.8.3.1-20.el7.x86_64
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package perl.x86_64 4:5.16.3-294.el7_6 will be installed
+    amazon-ebs: --> Processing Dependency: perl-libs = 4:5.16.3-294.el7_6 for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Socket) >= 1.3 for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Scalar::Util) >= 1.10 for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl-macros for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl-libs for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(threads::shared) for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(threads) for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(constant) for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Time::Local) for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Time::HiRes) for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Storable) for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Socket) for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Scalar::Util) for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Pod::Simple::XHTML) for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Pod::Simple::Search) for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Filter::Util::Call) for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Carp) for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: --> Processing Dependency: libperl.so()(64bit) for package: 4:perl-5.16.3-294.el7_6.x86_64
+    amazon-ebs: ---> Package perl-Error.noarch 1:0.17020-2.el7 will be installed
+    amazon-ebs: ---> Package perl-Exporter.noarch 0:5.68-3.el7 will be installed
+    amazon-ebs: ---> Package perl-File-Path.noarch 0:2.09-2.el7 will be installed
+    amazon-ebs: ---> Package perl-File-Temp.noarch 0:0.23.01-3.el7 will be installed
+    amazon-ebs: ---> Package perl-Getopt-Long.noarch 0:2.40-3.el7 will be installed
+    amazon-ebs: --> Processing Dependency: perl(Pod::Usage) >= 1.14 for package: perl-Getopt-Long-2.40-3.el7.noarch
+    amazon-ebs: --> Processing Dependency: perl(Text::ParseWords) for package: perl-Getopt-Long-2.40-3.el7.noarch
+    amazon-ebs: ---> Package perl-Git.noarch 0:1.8.3.1-20.el7 will be installed
+    amazon-ebs: ---> Package perl-PathTools.x86_64 0:3.40-5.el7 will be installed
+    amazon-ebs: ---> Package perl-TermReadKey.x86_64 0:2.30-20.el7 will be installed
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package perl-Carp.noarch 0:1.26-244.el7 will be installed
+    amazon-ebs: ---> Package perl-Filter.x86_64 0:1.49-3.el7 will be installed
+    amazon-ebs: ---> Package perl-Pod-Simple.noarch 1:3.28-4.el7 will be installed
+    amazon-ebs: --> Processing Dependency: perl(Pod::Escapes) >= 1.04 for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+    amazon-ebs: --> Processing Dependency: perl(Encode) for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+    amazon-ebs: ---> Package perl-Pod-Usage.noarch 0:1.63-3.el7 will be installed
+    amazon-ebs: --> Processing Dependency: perl(Pod::Text) >= 3.15 for package: perl-Pod-Usage-1.63-3.el7.noarch
+    amazon-ebs: --> Processing Dependency: perl-Pod-Perldoc for package: perl-Pod-Usage-1.63-3.el7.noarch
+    amazon-ebs: ---> Package perl-Scalar-List-Utils.x86_64 0:1.27-248.el7 will be installed
+    amazon-ebs: ---> Package perl-Socket.x86_64 0:2.010-4.el7 will be installed
+    amazon-ebs: ---> Package perl-Storable.x86_64 0:2.45-3.el7 will be installed
+    amazon-ebs: ---> Package perl-Text-ParseWords.noarch 0:3.29-4.el7 will be installed
+    amazon-ebs: ---> Package perl-Time-HiRes.x86_64 4:1.9725-3.el7 will be installed
+    amazon-ebs: ---> Package perl-Time-Local.noarch 0:1.2300-2.el7 will be installed
+    amazon-ebs: ---> Package perl-constant.noarch 0:1.27-2.el7 will be installed
+    amazon-ebs: ---> Package perl-libs.x86_64 4:5.16.3-294.el7_6 will be installed
+    amazon-ebs: ---> Package perl-macros.x86_64 4:5.16.3-294.el7_6 will be installed
+    amazon-ebs: ---> Package perl-threads.x86_64 0:1.87-4.el7 will be installed
+    amazon-ebs: ---> Package perl-threads-shared.x86_64 0:1.43-6.el7 will be installed
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package perl-Encode.x86_64 0:2.51-7.el7 will be installed
+    amazon-ebs: ---> Package perl-Pod-Escapes.noarch 1:1.04-294.el7_6 will be installed
+    amazon-ebs: ---> Package perl-Pod-Perldoc.noarch 0:3.20-4.el7 will be installed
+    amazon-ebs: --> Processing Dependency: perl(parent) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+    amazon-ebs: --> Processing Dependency: perl(HTTP::Tiny) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+    amazon-ebs: ---> Package perl-podlators.noarch 0:2.5.1-3.el7 will be installed
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package perl-HTTP-Tiny.noarch 0:0.033-3.el7 will be installed
+    amazon-ebs: ---> Package perl-parent.noarch 1:0.225-244.el7 will be installed
+    amazon-ebs: --> Finished Dependency Resolution
+    amazon-ebs:
+    amazon-ebs: Dependencies Resolved
+    amazon-ebs:
+    amazon-ebs: ================================================================================
+    amazon-ebs: Package                    Arch       Version                Repository   Size
+    amazon-ebs: ================================================================================
+    amazon-ebs: Installing:
+    amazon-ebs: git                        x86_64     1.8.3.1-20.el7         updates     4.4 M
+    amazon-ebs: Installing for dependencies:
+    amazon-ebs: perl                       x86_64     4:5.16.3-294.el7_6     updates     8.0 M
+    amazon-ebs: perl-Carp                  noarch     1.26-244.el7           base         19 k
+    amazon-ebs: perl-Encode                x86_64     2.51-7.el7             base        1.5 M
+    amazon-ebs: perl-Error                 noarch     1:0.17020-2.el7        base         32 k
+    amazon-ebs: perl-Exporter              noarch     5.68-3.el7             base         28 k
+    amazon-ebs: perl-File-Path             noarch     2.09-2.el7             base         26 k
+    amazon-ebs: perl-File-Temp             noarch     0.23.01-3.el7          base         56 k
+    amazon-ebs: perl-Filter                x86_64     1.49-3.el7             base         76 k
+    amazon-ebs: perl-Getopt-Long           noarch     2.40-3.el7             base         56 k
+    amazon-ebs: perl-Git                   noarch     1.8.3.1-20.el7         updates      55 k
+    amazon-ebs: perl-HTTP-Tiny             noarch     0.033-3.el7            base         38 k
+    amazon-ebs: perl-PathTools             x86_64     3.40-5.el7             base         82 k
+    amazon-ebs: perl-Pod-Escapes           noarch     1:1.04-294.el7_6       updates      51 k
+    amazon-ebs: perl-Pod-Perldoc           noarch     3.20-4.el7             base         87 k
+    amazon-ebs: perl-Pod-Simple            noarch     1:3.28-4.el7           base        216 k
+    amazon-ebs: perl-Pod-Usage             noarch     1.63-3.el7             base         27 k
+    amazon-ebs: perl-Scalar-List-Utils     x86_64     1.27-248.el7           base         36 k
+    amazon-ebs: perl-Socket                x86_64     2.010-4.el7            base         49 k
+    amazon-ebs: perl-Storable              x86_64     2.45-3.el7             base         77 k
+    amazon-ebs: perl-TermReadKey           x86_64     2.30-20.el7            base         31 k
+    amazon-ebs: perl-Text-ParseWords       noarch     3.29-4.el7             base         14 k
+    amazon-ebs: perl-Time-HiRes            x86_64     4:1.9725-3.el7         base         45 k
+    amazon-ebs: perl-Time-Local            noarch     1.2300-2.el7           base         24 k
+    amazon-ebs: perl-constant              noarch     1.27-2.el7             base         19 k
+    amazon-ebs: perl-libs                  x86_64     4:5.16.3-294.el7_6     updates     688 k
+    amazon-ebs: perl-macros                x86_64     4:5.16.3-294.el7_6     updates      44 k
+    amazon-ebs: perl-parent                noarch     1:0.225-244.el7        base         12 k
+    amazon-ebs: perl-podlators             noarch     2.5.1-3.el7            base        112 k
+    amazon-ebs: perl-threads               x86_64     1.87-4.el7             base         49 k
+    amazon-ebs: perl-threads-shared        x86_64     1.43-6.el7             base         39 k
+    amazon-ebs:
+    amazon-ebs: Transaction Summary
+    amazon-ebs: ================================================================================
+    amazon-ebs: Install  1 Package (+30 Dependent packages)
+    amazon-ebs:
+    amazon-ebs: Total download size: 16 M
+    amazon-ebs: Installed size: 59 M
+    amazon-ebs: Downloading packages:
+    amazon-ebs: --------------------------------------------------------------------------------
+    amazon-ebs: Total                                               14 MB/s |  16 MB  00:01
+    amazon-ebs: Running transaction check
+    amazon-ebs: Running transaction test
+    amazon-ebs: Transaction test succeeded
+    amazon-ebs: Running transaction
+    amazon-ebs: Installing : 1:perl-parent-0.225-244.el7.noarch                          1/31
+    amazon-ebs: Installing : perl-HTTP-Tiny-0.033-3.el7.noarch                           2/31
+    amazon-ebs: Installing : perl-podlators-2.5.1-3.el7.noarch                           3/31
+    amazon-ebs: Installing : perl-Pod-Perldoc-3.20-4.el7.noarch                          4/31
+    amazon-ebs: Installing : 1:perl-Pod-Escapes-1.04-294.el7_6.noarch                    5/31
+    amazon-ebs: Installing : perl-Encode-2.51-7.el7.x86_64                               6/31
+    amazon-ebs: Installing : perl-Text-ParseWords-3.29-4.el7.noarch                      7/31
+    amazon-ebs: Installing : perl-Pod-Usage-1.63-3.el7.noarch                            8/31
+    amazon-ebs: Installing : 4:perl-libs-5.16.3-294.el7_6.x86_64                         9/31
+    amazon-ebs: Installing : 4:perl-macros-5.16.3-294.el7_6.x86_64                      10/31
+    amazon-ebs: Installing : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      11/31
+    amazon-ebs: Installing : perl-Exporter-5.68-3.el7.noarch                            12/31
+    amazon-ebs: Installing : perl-constant-1.27-2.el7.noarch                            13/31
+    amazon-ebs: Installing : perl-Time-Local-1.2300-2.el7.noarch                        14/31
+    amazon-ebs: Installing : perl-Socket-2.010-4.el7.x86_64                             15/31
+    amazon-ebs: Installing : perl-Carp-1.26-244.el7.noarch                              16/31
+    amazon-ebs: Installing : perl-Storable-2.45-3.el7.x86_64                            17/31
+    amazon-ebs: Installing : perl-PathTools-3.40-5.el7.x86_64                           18/31
+    amazon-ebs: Installing : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 19/31
+    amazon-ebs: Installing : perl-File-Temp-0.23.01-3.el7.noarch                        20/31
+    amazon-ebs: Installing : perl-File-Path-2.09-2.el7.noarch                           21/31
+    amazon-ebs: Installing : perl-threads-shared-1.43-6.el7.x86_64                      22/31
+    amazon-ebs: Installing : perl-threads-1.87-4.el7.x86_64                             23/31
+    amazon-ebs: Installing : 1:perl-Pod-Simple-3.28-4.el7.noarch                        24/31
+    amazon-ebs: Installing : perl-Filter-1.49-3.el7.x86_64                              25/31
+    amazon-ebs: Installing : perl-Getopt-Long-2.40-3.el7.noarch                         26/31
+    amazon-ebs: Installing : 4:perl-5.16.3-294.el7_6.x86_64                             27/31
+    amazon-ebs: Installing : 1:perl-Error-0.17020-2.el7.noarch                          28/31
+    amazon-ebs: Installing : perl-TermReadKey-2.30-20.el7.x86_64                        29/31
+    amazon-ebs: Installing : perl-Git-1.8.3.1-20.el7.noarch                             30/31
+    amazon-ebs: Installing : git-1.8.3.1-20.el7.x86_64                                  31/31
+    amazon-ebs: Verifying  : perl-HTTP-Tiny-0.033-3.el7.noarch                           1/31
+    amazon-ebs: Verifying  : perl-threads-shared-1.43-6.el7.x86_64                       2/31
+    amazon-ebs: Verifying  : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                       3/31
+    amazon-ebs: Verifying  : 1:perl-Pod-Escapes-1.04-294.el7_6.noarch                    4/31
+    amazon-ebs: Verifying  : perl-Exporter-5.68-3.el7.noarch                             5/31
+    amazon-ebs: Verifying  : perl-constant-1.27-2.el7.noarch                             6/31
+    amazon-ebs: Verifying  : perl-PathTools-3.40-5.el7.x86_64                            7/31
+    amazon-ebs: Verifying  : 1:perl-parent-0.225-244.el7.noarch                          8/31
+    amazon-ebs: Verifying  : perl-TermReadKey-2.30-20.el7.x86_64                         9/31
+    amazon-ebs: Verifying  : 4:perl-libs-5.16.3-294.el7_6.x86_64                        10/31
+    amazon-ebs: Verifying  : perl-File-Temp-0.23.01-3.el7.noarch                        11/31
+    amazon-ebs: Verifying  : perl-Git-1.8.3.1-20.el7.noarch                             12/31
+    amazon-ebs: Verifying  : perl-Time-Local-1.2300-2.el7.noarch                        13/31
+    amazon-ebs: Verifying  : 4:perl-macros-5.16.3-294.el7_6.x86_64                      14/31
+    amazon-ebs: Verifying  : perl-Socket-2.010-4.el7.x86_64                             15/31
+    amazon-ebs: Verifying  : perl-Carp-1.26-244.el7.noarch                              16/31
+    amazon-ebs: Verifying  : 1:perl-Error-0.17020-2.el7.noarch                          17/31
+    amazon-ebs: Verifying  : git-1.8.3.1-20.el7.x86_64                                  18/31
+    amazon-ebs: Verifying  : perl-Storable-2.45-3.el7.x86_64                            19/31
+    amazon-ebs: Verifying  : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 20/31
+    amazon-ebs: Verifying  : perl-Pod-Usage-1.63-3.el7.noarch                           21/31
+    amazon-ebs: Verifying  : perl-Encode-2.51-7.el7.x86_64                              22/31
+    amazon-ebs: Verifying  : perl-Pod-Perldoc-3.20-4.el7.noarch                         23/31
+    amazon-ebs: Verifying  : perl-podlators-2.5.1-3.el7.noarch                          24/31
+    amazon-ebs: Verifying  : perl-File-Path-2.09-2.el7.noarch                           25/31
+    amazon-ebs: Verifying  : perl-threads-1.87-4.el7.x86_64                             26/31
+    amazon-ebs: Verifying  : 1:perl-Pod-Simple-3.28-4.el7.noarch                        27/31
+    amazon-ebs: Verifying  : perl-Filter-1.49-3.el7.x86_64                              28/31
+    amazon-ebs: Verifying  : perl-Getopt-Long-2.40-3.el7.noarch                         29/31
+    amazon-ebs: Verifying  : perl-Text-ParseWords-3.29-4.el7.noarch                     30/31
+    amazon-ebs: Verifying  : 4:perl-5.16.3-294.el7_6.x86_64                             31/31
+    amazon-ebs:
+    amazon-ebs: Installed:
+    amazon-ebs: git.x86_64 0:1.8.3.1-20.el7
+    amazon-ebs:
+    amazon-ebs: Dependency Installed:
+    amazon-ebs: perl.x86_64 4:5.16.3-294.el7_6
+    amazon-ebs: perl-Carp.noarch 0:1.26-244.el7
+    amazon-ebs: perl-Encode.x86_64 0:2.51-7.el7
+    amazon-ebs: perl-Error.noarch 1:0.17020-2.el7
+    amazon-ebs: perl-Exporter.noarch 0:5.68-3.el7
+    amazon-ebs: perl-File-Path.noarch 0:2.09-2.el7
+    amazon-ebs: perl-File-Temp.noarch 0:0.23.01-3.el7
+    amazon-ebs: perl-Filter.x86_64 0:1.49-3.el7
+    amazon-ebs: perl-Getopt-Long.noarch 0:2.40-3.el7
+    amazon-ebs: perl-Git.noarch 0:1.8.3.1-20.el7
+    amazon-ebs: perl-HTTP-Tiny.noarch 0:0.033-3.el7
+    amazon-ebs: perl-PathTools.x86_64 0:3.40-5.el7
+    amazon-ebs: perl-Pod-Escapes.noarch 1:1.04-294.el7_6
+    amazon-ebs: perl-Pod-Perldoc.noarch 0:3.20-4.el7
+    amazon-ebs: perl-Pod-Simple.noarch 1:3.28-4.el7
+    amazon-ebs: perl-Pod-Usage.noarch 0:1.63-3.el7
+    amazon-ebs: perl-Scalar-List-Utils.x86_64 0:1.27-248.el7
+    amazon-ebs: perl-Socket.x86_64 0:2.010-4.el7
+    amazon-ebs: perl-Storable.x86_64 0:2.45-3.el7
+    amazon-ebs: perl-TermReadKey.x86_64 0:2.30-20.el7
+    amazon-ebs: perl-Text-ParseWords.noarch 0:3.29-4.el7
+    amazon-ebs: --2019-06-19 03:22:06--  http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+    amazon-ebs: perl-Time-HiRes.x86_64 4:1.9725-3.el7
+    amazon-ebs: perl-Time-Local.noarch 0:1.2300-2.el7
+    amazon-ebs: perl-constant.noarch 0:1.27-2.el7
+    amazon-ebs: perl-libs.x86_64 4:5.16.3-294.el7_6
+    amazon-ebs: perl-macros.x86_64 4:5.16.3-294.el7_6
+    amazon-ebs: perl-parent.noarch 1:0.225-244.el7
+    amazon-ebs: perl-podlators.noarch 0:2.5.1-3.el7
+    amazon-ebs: Resolving repo.mysql.com (repo.mysql.com)... 173.222.249.136
+    amazon-ebs: perl-threads.x86_64 0:1.87-4.el7
+    amazon-ebs: perl-threads-shared.x86_64 0:1.43-6.el7
+    amazon-ebs:
+    amazon-ebs: Complete!
+    amazon-ebs: Connecting to repo.mysql.com (repo.mysql.com)|173.222.249.136|:80... connected.
+    amazon-ebs: HTTP request sent, awaiting response... 200 OK
+    amazon-ebs: Length: 6140 (6.0K) [application/x-redhat-package-manager]
+    amazon-ebs: Saving to: ‘mysql-community-release-el7-5.noarch.rpm’
+    amazon-ebs:
+    amazon-ebs: 0K .....                                                 100%  483M=0s
+    amazon-ebs:
+    amazon-ebs: 2019-06-19 03:22:06 (483 MB/s) - ‘mysql-community-release-el7-5.noarch.rpm’ saved [6140/6140]
+    amazon-ebs:
+    amazon-ebs: Preparing...                          ########################################
+    amazon-ebs: Updating / installing...
+    amazon-ebs: mysql-community-release-el7-5         ########################################
+    amazon-ebs: Loaded plugins: fastestmirror
+    amazon-ebs: Loading mirror speeds from cached hostfile
+    amazon-ebs: * base: mirrors.advancedhosters.com
+    amazon-ebs: * extras: mirrors.advancedhosters.com
+    amazon-ebs: * updates: mirror.vcu.edu
+    amazon-ebs: Resolving Dependencies
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package mysql-community-server.x86_64 0:5.6.44-2.el7 will be installed
+    amazon-ebs: --> Processing Dependency: mysql-community-common(x86-64) = 5.6.44-2.el7 for package: mysql-community-server-5.6.44-2.el7.x86_64
+    amazon-ebs: --> Processing Dependency: mysql-community-client(x86-64) >= 5.6.10 for package: mysql-community-server-5.6.44-2.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(Data::Dumper) for package: mysql-community-server-5.6.44-2.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(DBI) for package: mysql-community-server-5.6.44-2.el7.x86_64
+    amazon-ebs: --> Processing Dependency: libaio.so.1(LIBAIO_0.4)(64bit) for package: mysql-community-server-5.6.44-2.el7.x86_64
+    amazon-ebs: --> Processing Dependency: libaio.so.1(LIBAIO_0.1)(64bit) for package: mysql-community-server-5.6.44-2.el7.x86_64
+    amazon-ebs: --> Processing Dependency: libaio.so.1()(64bit) for package: mysql-community-server-5.6.44-2.el7.x86_64
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package libaio.x86_64 0:0.3.109-13.el7 will be installed
+    amazon-ebs: ---> Package mysql-community-client.x86_64 0:5.6.44-2.el7 will be installed
+    amazon-ebs: --> Processing Dependency: mysql-community-libs(x86-64) >= 5.6.10 for package: mysql-community-client-5.6.44-2.el7.x86_64
+    amazon-ebs: ---> Package mysql-community-common.x86_64 0:5.6.44-2.el7 will be installed
+    amazon-ebs: ---> Package perl-DBI.x86_64 0:1.627-4.el7 will be installed
+    amazon-ebs: --> Processing Dependency: perl(RPC::PlServer) >= 0.2001 for package: perl-DBI-1.627-4.el7.x86_64
+    amazon-ebs: --> Processing Dependency: perl(RPC::PlClient) >= 0.2000 for package: perl-DBI-1.627-4.el7.x86_64
+    amazon-ebs: ---> Package perl-Data-Dumper.x86_64 0:2.145-3.el7 will be installed
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package mariadb-libs.x86_64 1:5.5.60-1.el7_5 will be obsoleted
+    amazon-ebs: ---> Package mysql-community-libs.x86_64 0:5.6.44-2.el7 will be obsoleting
+    amazon-ebs: ---> Package perl-PlRPC.noarch 0:0.2020-14.el7 will be installed
+    amazon-ebs: --> Processing Dependency: perl(Net::Daemon) >= 0.13 for package: perl-PlRPC-0.2020-14.el7.noarch
+    amazon-ebs: --> Processing Dependency: perl(Net::Daemon::Test) for package: perl-PlRPC-0.2020-14.el7.noarch
+    amazon-ebs: --> Processing Dependency: perl(Net::Daemon::Log) for package: perl-PlRPC-0.2020-14.el7.noarch
+    amazon-ebs: --> Processing Dependency: perl(Compress::Zlib) for package: perl-PlRPC-0.2020-14.el7.noarch
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package perl-IO-Compress.noarch 0:2.061-2.el7 will be installed
+    amazon-ebs: --> Processing Dependency: perl(Compress::Raw::Zlib) >= 2.061 for package: perl-IO-Compress-2.061-2.el7.noarch
+    amazon-ebs: --> Processing Dependency: perl(Compress::Raw::Bzip2) >= 2.061 for package: perl-IO-Compress-2.061-2.el7.noarch
+    amazon-ebs: ---> Package perl-Net-Daemon.noarch 0:0.48-5.el7 will be installed
+    amazon-ebs: --> Running transaction check
+    amazon-ebs: ---> Package perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.el7 will be installed
+    amazon-ebs: ---> Package perl-Compress-Raw-Zlib.x86_64 1:2.061-4.el7 will be installed
+    amazon-ebs: --> Finished Dependency Resolution
+    amazon-ebs:
+    amazon-ebs: Dependencies Resolved
+    amazon-ebs:
+    amazon-ebs: ================================================================================
+    amazon-ebs: Package                   Arch     Version           Repository           Size
+    amazon-ebs: ================================================================================
+    amazon-ebs: Installing:
+    amazon-ebs: mysql-community-libs      x86_64   5.6.44-2.el7      mysql56-community   2.0 M
+    amazon-ebs: replacing  mariadb-libs.x86_64 1:5.5.60-1.el7_5
+    amazon-ebs: mysql-community-server    x86_64   5.6.44-2.el7      mysql56-community    60 M
+    amazon-ebs: Installing for dependencies:
+    amazon-ebs: libaio                    x86_64   0.3.109-13.el7    base                 24 k
+    amazon-ebs: mysql-community-client    x86_64   5.6.44-2.el7      mysql56-community    20 M
+    amazon-ebs: mysql-community-common    x86_64   5.6.44-2.el7      mysql56-community   257 k
+    amazon-ebs: perl-Compress-Raw-Bzip2   x86_64   2.061-3.el7       base                 32 k
+    amazon-ebs: perl-Compress-Raw-Zlib    x86_64   1:2.061-4.el7     base                 57 k
+    amazon-ebs: perl-DBI                  x86_64   1.627-4.el7       base                802 k
+    amazon-ebs: perl-Data-Dumper          x86_64   2.145-3.el7       base                 47 k
+    amazon-ebs: perl-IO-Compress          noarch   2.061-2.el7       base                260 k
+    amazon-ebs: perl-Net-Daemon           noarch   0.48-5.el7        base                 51 k
+    amazon-ebs: perl-PlRPC                noarch   0.2020-14.el7     base                 36 k
+    amazon-ebs:
+    amazon-ebs: Transaction Summary
+    amazon-ebs: ================================================================================
+    amazon-ebs: Install  2 Packages (+10 Dependent packages)
+    amazon-ebs:
+    amazon-ebs: Total download size: 83 M
+    amazon-ebs: Downloading packages:
+    amazon-ebs: warning: /var/cache/yum/x86_64/7/mysql56-community/packages/mysql-community-common-5.6.44-2.el7.x86_64.rpm: Header V3 DSA/SHA1 Signature, key ID 5072e1f5: NOKEY
+    amazon-ebs: Public key for mysql-community-common-5.6.44-2.el7.x86_64.rpm is not installed
+    amazon-ebs: Importing GPG key 0x5072E1F5:
+    amazon-ebs: Userid     : "MySQL Release Engineering <mysql-build@oss.oracle.com>"
+    amazon-ebs: --------------------------------------------------------------------------------
+    amazon-ebs: Total                                               46 MB/s |  83 MB  00:01
+    amazon-ebs: Fingerprint: a4a9 4068 76fc bd3c 4567 70c8 8c71 8d3b 5072 e1f5
+    amazon-ebs: Retrieving key from file:/etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+    amazon-ebs: Package    : mysql-community-release-el7-5.noarch (installed)
+    amazon-ebs: From       : file:/etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+    amazon-ebs: Running transaction check
+    amazon-ebs: Running transaction test
+    amazon-ebs: Warning: RPMDB altered outside of yum.
+    amazon-ebs: Transaction test succeeded
+    amazon-ebs: Running transaction
+    amazon-ebs: Installing : mysql-community-common-5.6.44-2.el7.x86_64                  1/13
+    amazon-ebs: Installing : perl-Data-Dumper-2.145-3.el7.x86_64                         2/13
+    amazon-ebs: Installing : mysql-community-libs-5.6.44-2.el7.x86_64                    3/13
+    amazon-ebs: Installing : mysql-community-client-5.6.44-2.el7.x86_64                  4/13
+    amazon-ebs: Installing : libaio-0.3.109-13.el7.x86_64                                5/13
+    amazon-ebs: Installing : 1:perl-Compress-Raw-Zlib-2.061-4.el7.x86_64                 6/13
+    amazon-ebs: Installing : perl-Net-Daemon-0.48-5.el7.noarch                           7/13
+    amazon-ebs: Installing : perl-Compress-Raw-Bzip2-2.061-3.el7.x86_64                  8/13
+    amazon-ebs: Installing : perl-IO-Compress-2.061-2.el7.noarch                         9/13
+    amazon-ebs: Installing : perl-PlRPC-0.2020-14.el7.noarch                            10/13
+    amazon-ebs: Installing : perl-DBI-1.627-4.el7.x86_64                                11/13
+    amazon-ebs: Installing : mysql-community-server-5.6.44-2.el7.x86_64                 12/13
+    amazon-ebs: Erasing    : 1:mariadb-libs-5.5.60-1.el7_5.x86_64                       13/13
+    amazon-ebs: Verifying  : perl-Compress-Raw-Bzip2-2.061-3.el7.x86_64                  1/13
+    amazon-ebs: Verifying  : perl-Net-Daemon-0.48-5.el7.noarch                           2/13
+    amazon-ebs: Verifying  : mysql-community-client-5.6.44-2.el7.x86_64                  3/13
+    amazon-ebs: Verifying  : mysql-community-libs-5.6.44-2.el7.x86_64                    4/13
+    amazon-ebs: Verifying  : perl-Data-Dumper-2.145-3.el7.x86_64                         5/13
+    amazon-ebs: Verifying  : mysql-community-common-5.6.44-2.el7.x86_64                  6/13
+    amazon-ebs: Verifying  : 1:perl-Compress-Raw-Zlib-2.061-4.el7.x86_64                 7/13
+    amazon-ebs: Verifying  : mysql-community-server-5.6.44-2.el7.x86_64                  8/13
+    amazon-ebs: Verifying  : perl-DBI-1.627-4.el7.x86_64                                 9/13
+    amazon-ebs: Verifying  : libaio-0.3.109-13.el7.x86_64                               10/13
+    amazon-ebs: Verifying  : perl-PlRPC-0.2020-14.el7.noarch                            11/13
+    amazon-ebs: Verifying  : perl-IO-Compress-2.061-2.el7.noarch                        12/13
+    amazon-ebs: Verifying  : 1:mariadb-libs-5.5.60-1.el7_5.x86_64                       13/13
+    amazon-ebs:
+    amazon-ebs: Installed:
+    amazon-ebs: mysql-community-libs.x86_64 0:5.6.44-2.el7
+    amazon-ebs: mysql-community-server.x86_64 0:5.6.44-2.el7
+    amazon-ebs:
+    amazon-ebs: Dependency Installed:
+    amazon-ebs: libaio.x86_64 0:0.3.109-13.el7
+    amazon-ebs: mysql-community-client.x86_64 0:5.6.44-2.el7
+    amazon-ebs: mysql-community-common.x86_64 0:5.6.44-2.el7
+    amazon-ebs: perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.el7
+    amazon-ebs: perl-Compress-Raw-Zlib.x86_64 1:2.061-4.el7
+    amazon-ebs: perl-DBI.x86_64 0:1.627-4.el7
+    amazon-ebs: perl-Data-Dumper.x86_64 0:2.145-3.el7
+    amazon-ebs: perl-IO-Compress.noarch 0:2.061-2.el7
+    amazon-ebs: perl-Net-Daemon.noarch 0:0.48-5.el7
+    amazon-ebs: perl-PlRPC.noarch 0:0.2020-14.el7
+    amazon-ebs:
+    amazon-ebs: Replaced:
+    amazon-ebs: mariadb-libs.x86_64 1:5.5.60-1.el7_5
+    amazon-ebs:
+    amazon-ebs: Complete!
+==> amazon-ebs: Stopping the source instance...
+    amazon-ebs: Stopping instance, attempt 1
+==> amazon-ebs: Waiting for the instance to stop...
+==> amazon-ebs: Creating the AMI: csye6225_1560914262
+    amazon-ebs: AMI: ami-04f3a57221de19131
+==> amazon-ebs: Waiting for AMI to become ready...
+==> amazon-ebs: Modifying attributes on AMI (ami-04f3a57221de19131)...
+    amazon-ebs: Modifying: description
+==> amazon-ebs: Modifying attributes on snapshot (snap-0e110dcc651f86ff4)...
+==> amazon-ebs: Terminating the source AWS instance...
+==> amazon-ebs: Cleaning up any extra volumes...
+==> amazon-ebs: No volumes to clean up, skipping
+==> amazon-ebs: Deleting temporary security group...
+==> amazon-ebs: Deleting temporary keypair...
+Build 'amazon-ebs' finished.
+
+==> Builds finished. The artifacts of successful builds are:
+--> amazon-ebs: AMIs were created:
+
+us-east-1: ami-04f3a57221de19131
