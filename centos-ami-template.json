@@ -31,22 +31,23 @@
       ]
     }
   ],
-
   "provisioners": [
     {
       "type": "shell",
       "inline": [
-          "sudo yum update -y",
-          "curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -",
-          "sudo yum install nodejs -y",
-          "sudo yum install wget -y",
-          "sudo yum install ruby -y",
-          "cd /home/centos",
-          "wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install",
-          "chmod +x ./install",
-          "sudo ./install auto",
-          "sudo service codedeploy-agent status",
-          "sudo npm install -g pm2"
+        "sudo yum update -y",
+        "curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -",
+        "sudo yum install nodejs -y",
+        "sudo yum install wget -y",
+        "sudo yum install ruby -y",
+        "cd /home/centos",
+        "wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install",
+        "chmod +x ./install",
+        "sudo ./install auto",
+        "sudo service codedeploy-agent status",
+        "sudo npm install -g pm2",
+        "wget https://s3.amazonaws.com/amazoncloudwatch-agent/centos/amd64/latest/amazon-cloudwatch-agent.rpm",
+        "sudo rpm -U ./amazon-cloudwatch-agent.rpm"
       ]
     }
   ]
